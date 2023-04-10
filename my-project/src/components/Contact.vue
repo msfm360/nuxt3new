@@ -85,7 +85,7 @@
               <h3 class="mb-8 text-4xl font-semibold md:text-4xl">
                 Send us a Message
               </h3>
-              <form action="POST" name="contact" netlify>
+              <form name="contact" netlify>
                 <div class="mb-6">
                   <label for="fullName" class="block text-xs text-dark"
                     >Full Name*</label
