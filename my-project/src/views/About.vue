@@ -18,7 +18,7 @@
                       <img
                         src="../assets/about.jpg"
                         alt=""
-                        class="w-64 h-80 object-cover rounded-2xl h-full"
+                        class="w-64 h-80 object-cover rounded-2xl"
                       />
                     </div>
                     <div class="py-3 sm:py-4">
