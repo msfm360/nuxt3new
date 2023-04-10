@@ -85,7 +85,7 @@
               <h3 class="mb-8 text-4xl font-semibold md:text-4xl">
                 Send us a Message
               </h3>
-              <form>
+              <form name="contact" netlify>
                 <div class="mb-6">
                   <label for="fullName" class="block text-xs text-dark"
                     >Full Name*</label
@@ -94,7 +94,7 @@
                     type="text"
                     name="fullName"
                     placeholder="First and Last Name"
-                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
+                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-gray-200 focus:outline-none"
                   />
                 </div>
                 <div class="mb-6">
@@ -105,7 +105,7 @@
                     type="email"
                     name="email"
                     placeholder="example@yourmail.com"
-                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
+                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-gray-200 focus:outline-none"
                   />
                 </div>
                 <div class="mb-6">
@@ -116,7 +116,7 @@
                     type="text"
                     name="phone"
                     placeholder="+966 555 555 555"
-                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
+                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-gray-200 focus:outline-none"
                   />
                 </div>
                 <div class="mb-6">
@@ -127,13 +127,13 @@
                     name="message"
                     rows="1"
                     placeholder="type your message here"
-                    class="w-full resize-none border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
+                    class="w-full resize-none border-0 border-b border-[#f1f1f1] py-4 focus:border-gray-200 focus:outline-none"
                   ></textarea>
                 </div>
                 <div class="mb-0">
                   <button
                     type="submit"
-                    class="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
+                    class="inline-flex items-center justify-center rounded bg-gray-200 py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
                   >
                     Send Message
                   </button>

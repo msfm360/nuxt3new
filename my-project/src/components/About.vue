@@ -14,7 +14,7 @@
           <div
             class="max-w-xl mb-6"
             v-motion-slide-visible-once-right
-            :delay="500"
+            :delay="100"
           >
             <h2
               class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none"
