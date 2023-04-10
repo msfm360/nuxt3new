@@ -85,50 +85,53 @@
               <h3 class="mb-8 text-4xl font-semibold md:text-4xl">
                 Send us a Message
               </h3>
-              <form name="contactus" netlify>
+              <form name="contact" netlify>
                 <div class="mb-6">
                   <label for="fullName" class="block text-xs text-dark"
-                    >Full Name*</label
-                  >
+                    >Full Name*
                   <input
                     type="text"
                     name="fullName"
                     placeholder="First and Last Name"
                     class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-gray-200 focus:outline-none"
                   />
+                  </label
+                  >
                 </div>
                 <div class="mb-6">
                   <label for="email" class="block text-xs text-dark"
-                    >Email*</label
-                  >
+                    >Email*
                   <input
                     type="email"
                     name="email"
                     placeholder="example@yourmail.com"
                     class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-gray-200 focus:outline-none"
                   />
+                </label>
                 </div>
                 <div class="mb-6">
                   <label for="phone" class="block text-xs text-dark"
-                    >Phone*</label
-                  >
+                    >Phone*
                   <input
                     type="text"
                     name="phone"
                     placeholder="+966 555 555 555"
                     class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-gray-200 focus:outline-none"
                   />
+                  </label
+                  >
                 </div>
                 <div class="mb-6">
                   <label for="message" class="block text-xs text-dark"
-                    >Message*</label
-                  >
+                    >Message*
                   <textarea
                     name="message"
                     rows="3"
                     placeholder="type your message here"
                     class="w-full resize-none border-0 border-b border-[#f1f1f1] py-4 focus:border-gray-200 focus:outline-none"
                   ></textarea>
+                  </label
+                  >
                 </div>
                 <div class="mb-0">
                   <button
