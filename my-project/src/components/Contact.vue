@@ -133,7 +133,7 @@
                 <div class="mb-0">
                   <button
                     type="submit"
-                    class="inline-flex items-center justify-center rounded bg-gray-200 py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
+                    class="inline-flex items-center justify-center rounded bg-blue-500 py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
                   >
                     Send Message
                   </button>
