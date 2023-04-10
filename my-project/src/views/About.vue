@@ -612,7 +612,7 @@
               </div>
               <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
                 <div class="mt-10 lg:mt-0">
-                  <span class="text-primary mb-2 block text-lg font-semibold text-center">
+                  <span class="text-6xl bg-blue-500 mb-2 block  font-semibold text-center text-white">
                     About Us
                   </span>
                   <h2 class="text-dark mb-8 text-3xl font-bold sm:text-4xl">
