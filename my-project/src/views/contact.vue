@@ -130,6 +130,11 @@
     </div>
   </div>
   <!-- ====== Contact Section End -->
+  <form name="contact" netlify>
+    <input type="text" name="name">
+    <input type="text" name="email">
+    <button type="submit">Subimt</button>
+  </form>
 </template>
 <script>
 export default {};
