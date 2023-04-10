@@ -125,7 +125,7 @@
                   >
                   <textarea
                     name="message"
-                    rows="1"
+                    rows="3"
                     placeholder="type your message here"
                     class="w-full resize-none border-0 border-b border-[#f1f1f1] py-4 focus:border-gray-200 focus:outline-none"
                   ></textarea>
