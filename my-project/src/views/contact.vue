@@ -126,7 +126,7 @@
     </div>
   </div>
   <!-- ====== Contact Section End -->
-  <form name="contact" netlify>
+  <form name="Section" netlify>
     <input type="text" name="name" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white">
     <input type="text" name="email" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white">
     <button type="submit" class="bg-blue-500">Subimt</button>
