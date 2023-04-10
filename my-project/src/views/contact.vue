@@ -73,16 +73,18 @@
                   </div>
                 </div>
               </div>
-              <div class="px-6 mt-16 text-center mb-20 ">
-                <div class="font-bold text-3xl text-center pb-1 text-gray-700  ">
+              <div class="px-6 mt-16 text-center mb-20">
+                <div class="font-bold text-3xl text-center pb-1 text-gray-700">
                   Whatsapp
                 </div>
                 <!-- whatsapp -->
-                Sales : 
+                Sales :
                 <a
                   href="https://wa.me/966532688777"
                   class="text-blue-500"
-                  target="_blank">+966532688777</a>
+                  target="_blank"
+                  >+966532688777</a
+                >
               </div>
             </div>
             <!-- end card -->
@@ -98,7 +100,7 @@
                   <div
                     class="h-full w-full rounded-full shadow-lg border border-solid flex justify-center items-center text-gray-700 bg-white"
                   >
-                  <i class="fa-solid fa-phone w-20 h-20"></i>
+                    <i class="fa-solid fa-phone w-20 h-20"></i>
                   </div>
                 </div>
               </div>
@@ -107,33 +109,27 @@
                   Phone
                 </div>
                 <div>
-                    <span>sales:</span>
-                    <a
-                        href="tel:+966532688777"
-                        class="text-blue-500 "
-                    >
-                        +966532688777
-                    </a>
+                  <span>sales:</span>
+                  <a href="tel:+966532688777" class="text-blue-500">
+                    +966532688777
+                  </a>
                 </div>
-                <div>
-
-                </div>
+                <div></div>
               </div>
             </div>
             <!-- end card -->
           </div>
           <!-- end -->
           <!-- card  -->
-          
         </div>
       </div>
     </div>
   </div>
   <!-- ====== Contact Section End -->
   <form name="contact" netlify>
-    <input type="text" name="name">
-    <input type="text" name="email">
-    <button type="submit">Subimt</button>
+    <input type="text" name="name" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white">
+    <input type="text" name="email" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white">
+    <button type="submit" class="bg-blue-500">Subimt</button>
   </form>
 </template>
 <script>
