@@ -143,7 +143,7 @@
           class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8 shadow-lg"
         > -->
         <img
-          src="https://www.ippmagazine.com/wp-content/uploads/2021/03/shutterstock_583365046-1024x717.jpg"
+          src="../assets/Fire_proofing_coatings.png"
           alt="."
           class="rounded-lg bg-gray-100 w-[38rem] h-[26rem]"
         />
@@ -213,7 +213,7 @@
         class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8"
       >
         <img
-          src="https://www.ippmagazine.com/wp-content/uploads/2021/03/shutterstock_583365046-1024x717.jpg"
+          src="../assets/tank.jpg"
           alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
           class="rounded-lg bg-gray-100 w-[38rem] h-[26rem]"
         />
@@ -306,7 +306,7 @@
         >
           <img
             class="w-[38rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 sm:w-[57rem]"
-            src="https://www.ippmagazine.com/wp-content/uploads/2021/03/shutterstock_583365046-1024x717.jpg"
+            src=""
             alt=""
           />
         </div>
