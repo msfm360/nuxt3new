@@ -9,6 +9,10 @@ export default {
         { code: "ar", name: "عربي" },
       ],
       title: "Estehdath",
+      home: "Home",
+      services: "Services",
+      about: "About us",
+      contact: "Contat",
     };
   },
   methods: {
@@ -20,11 +24,17 @@ export default {
       this.$store.commit("setLanguage", languageCode);
 
       // call the API with the selected language code
-      const response = await fetch(
-        `https://strapi-bbid.onrender.com/api/enwan-almwqes?locale=${languageCode}`
-      );
-      const data = await response.json();
-      this.title = data.data[0].attributes.title;
+      // const response = await fetch(
+      //   `https://strapi-bbid.onrender.com/api/enwan-almwqes?locale=${languageCode}`
+      // );
+      // const data = await response.json();
+      // this.title = data.data[0].attributes.title;
+      const data = await import(`../lang/header/${languageCode}.json`);
+      this.title = data.title;
+      this.home = data.home;
+      this.services = data.services;
+      this.about = data.about;
+      this.contact = data.contact;
     },
   },
 };
@@ -77,17 +87,17 @@ export default {
       </div>
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
         <router-link to="/" class="text-sm font-semibold leading-6 text-gray-900"
-          >Home</router-link
+          >{{home}}</router-link
         >
         <router-link to="/Services" class="text-sm font-semibold leading-6 text-gray-900"
-          >Services</router-link
+          >{{services}}</router-link
         >
 
         <router-link to="/About" class="text-sm font-semibold leading-6 text-gray-900"
-          >About us</router-link
+          >{{ about }}</router-link
         >
         <router-link to="/Contact" class="text-sm font-semibold leading-6 text-gray-900"
-          >Contact</router-link
+          >{{ contact }}</router-link
         >
 
       </PopoverGroup>

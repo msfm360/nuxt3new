@@ -66,8 +66,11 @@
       </div>
       <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col">
         <div class="mx-auto max-w-2xl lg:mx-0">
-          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl" dir="rtl">
-            خدماتنا
+          <h2
+            class="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+            :dir="language === 'ar' ? 'rtl' : 'ltr'"
+          >
+            {{ Main_activities_of_Estehdath }}
           </h2>
         </div>
         <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
@@ -103,20 +106,18 @@
     >
       <div class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
         <h2 class="font-extrabold text-black dark:text-white sm:text-4xl">
-          <span class="block text-6xl text-center"> دهانات الحماية </span>
+          <span class="block text-6xl text-center">
+            {{ Protective_coatings }}
+          </span>
         </h2>
         <p class="text-2xl mt-4 text-gray-400 text-center">
-          “استحداث تخصصت في تنفيذ مشاريع الدهانات الواقية من الصدآ و التآكل
-          للآسطح الحديدية بمواصفات عالمية. تستخدم استحداث أفضل المواد و الدهانات
-          و تتبع منهجية علمية في تنفيذ هذه المشاريع. تشمل خدمات استحداث مشاريع
-          الحماية للمنشاءات النفطية و الغازية و الجسور و الآبراج و الهياكل
-          المعدنية وغيرها
+          {{ Protective_coatings_description }}
         </p>
         <div class="lg:mt-0 lg:flex-shrink-0"></div>
       </div>
       <div class="flex items-center gap-8 p-8 lg:p-24">
         <img
-          src="https://images.unsplash.com/photo-1647426994723-ab685e4b8c77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1823&q=80"
+          src="../assets/Protective_coatings_image.png"
           class="rounded-lg"
           alt="Tree"
         />
@@ -134,33 +135,29 @@
         </div> -->
       </div>
     </div>
-    <div class="bg-slate-200 ">
+    <div class="bg-slate-200">
       <div
         class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8"
       >
         <!-- <div
           class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8 shadow-lg"
         > -->
-          <img
-            src="https://www.ippmagazine.com/wp-content/uploads/2021/03/shutterstock_583365046-1024x717.jpg"
-            alt="."
-            class="rounded-lg bg-gray-100 w-[38rem] h-[26rem]"
-          />
+        <img
+          src="https://www.ippmagazine.com/wp-content/uploads/2021/03/shutterstock_583365046-1024x717.jpg"
+          alt="."
+          class="rounded-lg bg-gray-100 w-[38rem] h-[26rem]"
+        />
         <div>
-            <div dir="rtl">
-          <h2
-            class="text-6xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center"
-          >
-            الدهانات المقاومة للحريق
-          </h2>
-          <p class="mt-4 text-gray-600 text-2xl ">
-            تقوم استحداث بتنفيذ مشاريع دهانات الحماية من الحريق للهياكل الحديدية
-            وفق اشتراطات الدفاع المدني و كود البناء السعودي عبر استخدام احدث
-            المعدات و امهر الفنيين و معرفة تقنية عالية بالمجال ، للمنشآت
-            الصناعية و التجارية و الأهلية كالمصانع و الأبراج الحديدية و المطارات
-            و المستودعات ....الخ
-          </p>
-        </div>
+          <div :dir="language === 'ar' ? 'rtl' : 'ltr'">
+            <h2
+              class="text-6xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center"
+            >
+              {{ Fire_proofing_coatings }}
+            </h2>
+            <p class="mt-4 text-gray-600 text-2xl">
+              {{ Fire_proofing_coatings_description }}
+            </p>
+          </div>
           <!-- <dl
             class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8"
           >
@@ -181,21 +178,19 @@
     <div
       class="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
     >
-      <div class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20" dir="rtl">
+      <div class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20" :dir="language === 'ar' ? 'rtl' : 'ltr'">
         <h2 class="font-extrabold text-black dark:text-white sm:text-4xl">
-          <span class="block text-6xl text-center"> دهانات الآرضيات </span>
+          <span class="block text-6xl text-center"> {{ Floor_coatings }} </span>
         </h2>
-        <p class="text-2xl mt-4 text-gray-600 text-center ">
-          تقوم استحداث بتنفيذ مشاريع دهانات الارضيات للمصانع كمصانع الأغذية و
-          مواقف السيارات و المختبرات و المطارات عبر استخدام احدث الأدوات و
-          التقنيات في تنفيذ هذه المشاريع
+        <p class="text-2xl mt-4 text-gray-600 text-center">
+          {{ Floor_coatings_description }}
         </p>
         <div class="lg:mt-0 lg:flex-shrink-0"></div>
       </div>
       <div class="flex items-center gap-8 p-8 lg:p-24">
         <img
           src="../assets/img2.jpg"
-          class=" rounded-lg items-center justify-center "
+          class="rounded-lg items-center justify-center"
           alt="Tree"
         />
         <!-- <div>
@@ -224,20 +219,16 @@
         />
 
         <div>
-            <div dir="rtl">
-          <h2
-            class="text-6xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center"
-          >
-            الدهانات المقاومة للحريق
-          </h2>
-          <p class="mt-4 text-gray-500 text-2xl"  >
-            تقوم استحداث بتنفيذ مشاريع دهانات الحماية من الحريق للهياكل الحديدية
-            وفق اشتراطات الدفاع المدني و كود البناء السعودي عبر استخدام احدث
-            المعدات و امهر الفنيين و معرفة تقنية عالية بالمجال ، للمنشآت
-            الصناعية و التجارية و الأهلية كالمصانع و الأبراج الحديدية و المطارات
-            و المستودعات ....الخ
-          </p>
-        </div>
+          <div :dir="language === 'ar' ? 'rtl' : 'ltr'">
+            <h2
+              class="text-6xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center"
+            >
+              {{ Tank_protection_coatings }}
+            </h2>
+            <p class="mt-4 text-gray-500 text-2xl">
+              {{ Tank_protection_coatings_description }}
+            </p>
+          </div>
           <!-- <dl
             class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8"
           >
@@ -255,7 +246,7 @@
         </div>
       </div>
     </div>
-    
+
     <div
       class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
     >
@@ -299,16 +290,13 @@
           <div class="lg:pr-4">
             <div class="lg:max-w-lg">
               <h1
-                class="mt-2 text-6xl font-bold tracking-tight text-gray-900 sm:text-4xl" dir="rtl"
+                class="mt-2 text-6xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+                :dir="language === 'ar' ? 'rtl' : 'ltr'"
               >
-                دهانات الحماية للهياكل الخرسانية
+                {{ Coating_for_concrete_structure }}
               </h1>
-              <p class="mt-6 text-2xl leading-8 text-gray-700" dir="rtl">
-                استحداث تخصصت في تنفيذ مشاريع الدهانات الواقية من الصدآ و التآكل
-                للآسطح الحديدية بمواصفات عالمية. تستخدم استحداث أفضل المواد و
-                الدهانات و تتبع منهجية علمية في تنفيذ هذه المشاريع. تشمل خدمات
-                استحداث مشاريع الحماية للمنشاءات النفطية و الغازية و الجسور و
-                الآبراج و الهياكل المعدنية وغيرها.
+              <p class="mt-6 text-2xl leading-8 text-gray-700" :dir="language === 'ar' ? 'rtl' : 'ltr'">
+                {{ Coating_for_concrete_structure_description }}
               </p>
             </div>
           </div>
@@ -317,7 +305,7 @@
           class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
         >
           <img
-            class=" w-[38rem] max-w-none rounded-xl bg-gray-900 shadow-xl  ring-gray-400/10 sm:w-[57rem]"
+            class="w-[38rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 sm:w-[57rem]"
             src="https://www.ippmagazine.com/wp-content/uploads/2021/03/shutterstock_583365046-1024x717.jpg"
             alt=""
           />
@@ -326,40 +314,78 @@
     </div>
 
     <!-- ok -->
-    <div
-      class="relative isolate overflow-hidden "
-      dir="rtl"
-    >
+    <div class="relative isolate overflow-hidden" :dir="language === 'ar' ? 'rtl' : 'ltr'">
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
   name: "component",
+  computed: {
+    language() {
+      return this.$store.state.Language;
+    },
+  },
   data() {
     return {
-      features: [
-        { name: "Origin", description: "Designed by Good Goods, Inc." },
-        {
-          name: "Material",
-          description:
-            "Solid walnut base with rare earth magnets and powder coated steel card cover",
-        },
-        { name: "Dimensions", description: '6.25" x 3.55" x 1.15"' },
-        {
-          name: "Finish",
-          description: "Hand sanded and finished with natural oil",
-        },
-        { name: "Includes", description: "Wood card tray and 3 refill packs" },
-        {
-          name: "Considerations",
-          description:
-            "Made from natural materials. Grain and color vary with each item.",
-        },
-      ],
+      Main_activities_of_Estehdath: "Main activities of Estehdath",
+      Main_activities_of_Estehdath_description:
+        "As a specialized contracting company, we require technical knowledge and high execution skills in our main fields",
+      Protective_coatings: "Protective coatings",
+      Protective_coatings_image: "../assets/Protective_coatings_image.png",
+      Protective_coatings_description:
+        "We execute projects for protective coatings against rust and corrosion on steel surfaces according to the highest international standards for implementing this type of project, based on a scientific and technical approach, and using the best materials and paints. Our projects cover petroleum and gas facilities, bridges, iron towers, steel structures, etc.",
+        Fire_proofing_coatings: "Fire-proofing coatings",
+        Fire_proofing_coatings_description:
+        "Our company executes fire protection coating projects for steel structures according to the conditions of civil defense and the Saudi building code. We use the best equipment and highly skilled technicians in this field for industrial, commercial, and civil facilities such as factories, iron towers, airports, warehouses, etc.",
+      Floor_coatings: "Floor coatings",
+      Floor_coatings_description:
+        "Our company executes floor coating projects for factories such as food factories, parking lots, laboratories, and airports using the best tools and techniques",
+      Tank_protection_coatings: "Tank protection coatings",
+      Tank_protection_coatings_description:
+        "We apply the best products to coat tanks to protect them from corrosion, such as drinking water tanks and chemical storage tanks.",
+      Insulation: "Insulation",
+      Insulation_description:
+        "Our company executes thermal and water insulation projects for industrial, civil, and commercial facilities such as factories, malls, and warehouses",
+      Coating_for_concrete_structure: "Coating for concrete structure",
+      Coating_for_concrete_structure_description:
+        "Our company executes projects for protecting concrete structures from corrosion by using the latest anti-carbonation materials, such as bridges.",
     };
+  },
+  created() {
+    this.fetchContent();
+  },
+  methods: {
+    async fetchContent() {
+      const languageCode = this.$store.state.Language;
+      const data = await import(`../lang/servicesView/${languageCode}.json`);
+      console.log(data.Fire_proofing_coatings);
+      this.Main_activities_of_Estehdath = data.Main_activities_of_Estehdath;
+      this.Main_activities_of_Estehdath_description =
+        data.Main_activities_of_Estehdath_description;
+      this.Protective_coatings = data.Protective_coatings;
+      this.Protective_coatings_description =
+        data.Protective_coatings_description;
+      this.Fire_proofing_coatings = data.Fire_proofing_coatings;
+      this.Fire_proofing_coatings_description =
+        data.Fire_proofing_coatings_description;
+      this.Floor_coatings = data.Floor_coatings;
+      this.Floor_coatings_description = data.Floor_coatings_description;
+      this.Tank_protection_coatings = data.Tank_protection_coatings;
+      this.Tank_protection_coatings_description =
+        data.Tank_protection_coatings_description;
+      this.Insulation = data.Insulation;
+      this.Insulation_description = data.Insulation_description;
+      this.Coating_for_concrete_structure = data.Coating_for_concrete_structure;
+      this.Coating_for_concrete_structure_description =
+        data.Coating_for_concrete_structure_description;
+    },
+  },
+  watch: {
+    language: function (newLanguage, oldLanguage) {
+      this.fetchContent();
+    },
   },
 };
 </script>

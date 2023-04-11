@@ -3,7 +3,6 @@ export default {
   name: "Hero",
   computed: {
     language() {
-      console.log(this.$store.state.Language);
       return this.$store.state.Language;
     },
   },
