@@ -73,10 +73,12 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
         <div
           class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+          
         >
           <h2
             class="font-bold tracking-tight text-white sm:text-6xl lg:whitespace-nowrap text-4xl"
             :dir="language === 'ar' ? 'rtl' : 'ltr'"
+            v-motion-fade
           >
             {{ Main_activities_of_Estehdath }}
           </h2>
@@ -111,6 +113,7 @@
 
     <div
       class="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
+      v-motion-slide-right :delay="200"
     >
       <div class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
         <h2
@@ -135,6 +138,7 @@
     </div>
     <div
       class="bg-slate-200 dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
+      v-motion-slide-visible-left :delay="200"
     >
       <div class="flex items-center gap-8 p-8 lg:p-24 justify-center">
         <img
@@ -163,6 +167,7 @@
 
     <div
       class="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
+      v-motion-slide-visible-right :delay="200"
     >
       <div
         class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20"
@@ -186,6 +191,7 @@
     </div>
     <div
       class="bg-slate-200 dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
+      v-motion-slide-visible-left :delay="200"
     >
       <div class="flex items-center gap-8 p-8 lg:p-24 justify-center">
         <img
@@ -214,6 +220,7 @@
 
     <div
       class="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
+      v-motion-slide-visible-right :delay="200"
     >
     <div
         class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20"
@@ -243,6 +250,7 @@
 
     <div
       class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 border-2 border-solid border-blue-50"
+      v-motion-pop-visible :delay="200"
     >
       <div class="absolute inset-0 -z-10 overflow-hidden">
         <svg
