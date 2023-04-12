@@ -75,7 +75,7 @@
           class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
         >
           <h2
-            class="font-bold tracking-tight text-white sm:text-6xl lg:whitespace-nowrap"
+            class="font-bold tracking-tight text-white sm:text-6xl lg:whitespace-nowrap text-4xl"
             :dir="language === 'ar' ? 'rtl' : 'ltr'"
           >
             {{ Main_activities_of_Estehdath }}
