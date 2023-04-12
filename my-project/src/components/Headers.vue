@@ -29,7 +29,7 @@ export default {
       // );
       // const data = await response.json();
       // this.title = data.data[0].attributes.title;
-      const data = await import(`../lang/header/${languageCode}.json`);
+      const data = await import(`../lang/Home/${languageCode}.json`);
       this.title = data.title;
       this.home = data.home;
       this.services = data.services;
@@ -55,7 +55,7 @@ export default {
         >
         <img src="../assets/image.svg" alt="" srcset="" class=" w-10 h-10">
         <span
-            class="m-0 p-0 text-xl font-bold tracking-wide text-[#C5943B] uppercase"
+            class="m-0 p-0 text-xl font-bold tracking-wide text-[#C5943B] "
           >
             {{ title }}</span
           >
@@ -148,7 +148,8 @@ export default {
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">
             </span>
-            <span class="ml-2 text-xl font-bold tracking-wide text-[#C5943B] uppercase"> {{ title }}</span>
+            <img src="../assets/image.svg" alt="" srcset="" class="w-10 h-10 inline-block">
+            <span class="text-xl font-bold tracking-wide text-[#C5943B]"> {{ title }}</span>
           </a>
           <button
             type="button"
@@ -162,9 +163,13 @@ export default {
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
+              <router-link to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+              @click="mobileMenuOpen = false"
+          >{{home}}</router-link
+        >
               <router-link to="/Services" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
               @click="mobileMenuOpen = false"
-          >Services</router-link
+          >{{services}}</router-link
         >
 
 
@@ -173,12 +178,12 @@ export default {
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 @click="mobileMenuOpen = false"
 
-                >About us</router-link
+                >{{about}} </router-link
               >
               <router-link to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
               @click="mobileMenuOpen = false"
 
-          >Contact</router-link
+          >{{contact}}</router-link
         >
             </div>
             <div class="py-6">

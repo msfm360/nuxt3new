@@ -8,8 +8,16 @@ export default {
   },
   data() {
     return {
-      heroContent:
+      hero_Content:
         "We cover all your coating and insulation needs. Whether you need intumescent paint, floor coating, water and thermal insulation, we have you covered. We use the latest technology and materials to ensure quality and durability.",
+      // slogan: "We cover all your coating and insulation needs",
+      slogan: "We cover all your",
+      word_coating: "Coating",
+      word_insulation: "Insulation",
+      word_and: "and",
+      word_needs: "needs",
+      Contact_us: "Contact us today",
+      Learn_more: "Learn more"
     };
   },
   created() {
@@ -18,11 +26,19 @@ export default {
   methods: {
     async fetchContent() {
       const languageCode = this.$store.state.Language;
-      const response = await fetch(
-        `https://strapi-bbid.onrender.com/api/heroes?locale=${languageCode}`
-      );
-      const data = await response.json();
-      this.heroContent = data.data[0].attributes.content;
+      // const response = await fetch(
+      //   `https://strapi-bbid.onrender.com/api/heroes?locale=${languageCode}`
+      // );
+      // const data = await response.json();
+      const data = await import(`../lang/Home/${languageCode}.json`);
+      this.hero_Content = data.hero_Content;
+      this.slogan = data.slogan;
+      this.word_coating = data.word_coating;
+      this.word_insulation = data.word_insulation;
+      this.word_and = data.word_and;
+      this.word_needs = data.word_needs;
+      this.Contact_us = data.Contact_us;
+      this.Learn_more = data.Learn_more;
     },
   },
   watch: {
@@ -54,46 +70,48 @@ export default {
       <!-- <picture>
         <source type="image/avif" srcset="../assets/backgroundMain.avif" />
         <source type="image/jpg" srcset="../assets/backgroundMain.jpg" /> -->
-        <img
-          class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-          src="../assets/backgroundMain.webp"
-          alt="background image for main page"
-        />
+      <img
+        class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+        src="../assets/backgroundMain.webp"
+        alt="background image for main page"
+      />
       <!-- </picture> -->
     </div>
 
     <div
-      class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl"
+      class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl" 
     >
-      <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
+      <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5" >
         <h2
-          class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none transition duration-500 transform hover:-translate-y-1"
+          class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none transition duration-500 transform hover:-translate-y-1" :dir="language === 'ar' ? 'rtl' : 'ltr'"
         >
-          We cover all your
+          {{ slogan }}
           <div class="inline-block" v-motion-roll-left :delay="500">
-            <span class="text-[#FFA602]"> coating </span>
+            <span class="text-[#FFA602]"> {{ word_coating }} </span>
           </div>
-          and
+          {{word_and}}
           <div class="inline-block" v-motion-roll-left :delay="500">
-            <span class="text-[#FFA602]"> insulation </span>
+            <span class="text-[#FFA602]"> {{ word_insulation }} </span>
           </div>
-          needs
+          {{ word_needs }}
         </h2>
-        <p class="pr-5 mb-5 text-base text-gray-700 md:text-lg">
-          {{ heroContent }}
+        <p
+          class="pr-5 mb-5 text-base text-gray-700 md:text-lg transition duration-500 transform hover:-translate-y-1" :dir="language === 'ar' ? 'rtl' : 'ltr'"
+        >
+          {{ hero_Content }}
         </p>
         <div class="flex items-center">
           <router-link
             to="/contact"
             class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#FFA602] hover:bg-yellow-700 focus:shadow-outline focus:outline-none"
           >
-            Contact us today
+            {{ Contact_us  }}
           </router-link>
           <router-link
             to="/Services"
             aria-label=""
             class="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-[#FFA602]"
-            >Learn more</router-link
+            >{{Learn_more}}</router-link
           >
         </div>
       </div>
