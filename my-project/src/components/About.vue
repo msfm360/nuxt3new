@@ -57,7 +57,7 @@ export default {
               <!-- Let us -->
               {{ About_us_Let }}
               <div class="inline-block">
-                <span class="inline-block bg-blue-500">
+                <span class="inline-block ">
                   <!-- protect -->
                   {{ About_us_protect }}
                 </span>
