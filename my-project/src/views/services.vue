@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto container px-6 xl:px-0 mt-12 shadow-2xl mb-10">
     <div
-      class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 justify-end items-end"
+      class="relative isolate overflow-hidden bg-gray-100 py-24 sm:py-32 justify-end items-end"
     >
     <!-- <img
           src="../assets/background.avif"
@@ -12,7 +12,7 @@
         <img
           src="../assets/background.webp"
           alt="background for services page"
-          class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+          class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center blur-sm"
         />
       <div
         class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
@@ -116,7 +116,7 @@
         <h2
           class="font-extrabold sm:text-4xl lg:whitespace-nowrap text-blue-500 dark:text-white"
         >
-          <span class="block text-6xl text-center">
+          <span class="block text-6xl text-center lg:whitespace-nowrap sm:text-4xl">
             {{ Protective_coatings }}
           </span>
         </h2>
@@ -168,9 +168,9 @@
         class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20"
         :dir="language === 'ar' ? 'rtl' : 'ltr'"
       >
-        <h2 class="font-extrabold text-blue-500 dark:text-white sm:text-4xl">
-          <span class="block text-6xl text-center"> {{ Floor_coatings }} </span>
-        </h2>
+        <div class="font-extrabold text-blue-500 dark:text-white sm:text-4xl">
+          <span class="block text-6xl text-center lg:whitespace-nowrap sm:text-4xl"> {{ Floor_coatings }} </span>
+        </div>
         <p class="text-2xl mt-4 text-gray-600 text-center">
           {{ Floor_coatings_description }}
         </p>
@@ -279,12 +279,12 @@
         <div class="flex flex-col container justify-center items-center text-center">
           <div class="lg:pr-4">
             <div class="lg:max-w-lg">
-              <h1
-                class="font-extrabold text-[#C5943B] dark:text-white sm:text-4xl lg:whitespace-nowrap "
+              <div
+                class="font-extrabold text-[#C5943B] dark:text-white sm:text-4xl lg:whitespace-nowrap max-md:text-6xl"
                 :dir="language === 'ar' ? 'rtl' : 'ltr'"
               >
                 {{ Coating_for_concrete_structure }}
-              </h1>
+              </div>
               <p
                 class="mt-6 text-2xl leading-8 text-gray-700"
                 :dir="language === 'ar' ? 'rtl' : 'ltr'"
