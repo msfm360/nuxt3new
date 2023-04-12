@@ -10,7 +10,7 @@
         /> -->
 
         <img
-          src="../assets/background.jpg"
+          src="../assets/background.avif"
           alt="background for services page"
           class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         />
