@@ -19,7 +19,7 @@
         <a href="https://www.basf.com/sa/en.html/" target="_blank"
           ><img
             class="col-span-2 max-h-12 w-full object-contain lg:col-span-1 grayscale duration-300 hover:filter-none"
-            src="../assets/logos/basf.svg"
+            src="../assets/logos/BASF.svg"
             alt="Reform"
             width="158"
             height="48"
