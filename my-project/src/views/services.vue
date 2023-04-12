@@ -1,13 +1,23 @@
 <template>
-  <div class="mx-auto container px-6 xl:px-0 mt-12 shadow-2xl mb-10 ">
+  <div class="mx-auto container px-6 xl:px-0 mt-12 shadow-2xl mb-10">
     <div
       class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 justify-end items-end"
     >
-      <img
-        src="../assets/images/background.avif"
-        alt=""
-        class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
-      />
+    <img
+          src="../assets/background.avif"
+          alt="background for services page"
+          class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+        />
+
+      <picture>
+        <source type="image/avif" srcset="../assets/background.avif" />
+        <source type="image/webp" srcset="../assets/background.avif" />
+        <img
+          src="../assets/background.jpg"
+          alt="background for services page"
+          class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+        />
+      </picture>
       <div
         class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
         aria-hidden="true"
@@ -107,7 +117,9 @@
       class="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
     >
       <div class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-        <h2 class="font-extrabold  sm:text-4xl whitespace-nowrap text-blue-500 dark:text-white">
+        <h2
+          class="font-extrabold sm:text-4xl whitespace-nowrap text-blue-500 dark:text-white"
+        >
           <span class="block text-6xl text-center">
             {{ Protective_coatings }}
           </span>
@@ -140,10 +152,10 @@
     <div
       class="bg-slate-200 dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
     >
-    <div class="flex items-center gap-8 p-8 lg:p-24 justify-center">
+      <div class="flex items-center gap-8 p-8 lg:p-24 justify-center">
         <img
           src="../assets/Fire_proofing_coatings.png"
-          class="rounded-lg object-cover h-full w-[70rem] shadow-xl "
+          class="rounded-lg object-cover h-full w-[70rem] shadow-xl"
           alt="Tree"
         />
       </div>
@@ -152,12 +164,14 @@
         :dir="language === 'ar' ? 'rtl' : 'ltr'"
       >
         <h2 class="font-extrabold text-[#C5943B] dark:text-white sm:text-4xl">
-          <span class="block text-6xl text-center whitespace-nowrap sm:text-4xl">               {{ Fire_proofing_coatings }}
- </span>
+          <span
+            class="block text-6xl text-center whitespace-nowrap sm:text-4xl"
+          >
+            {{ Fire_proofing_coatings }}
+          </span>
         </h2>
         <p class="text-2xl mt-4 text-gray-600 text-center">
           {{ Fire_proofing_coatings_description }}
-
         </p>
         <div class="lg:mt-0 lg:flex-shrink-0"></div>
       </div>
@@ -202,7 +216,7 @@
     <div
       class="bg-slate-200 dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
     >
-    <div class="flex items-center gap-8 p-8 lg:p-24">
+      <div class="flex items-center gap-8 p-8 lg:p-24">
         <img
           src="../assets/tank.jpg"
           class="rounded-lg object-cover h-full w-[70rem] shadow-xl"
@@ -214,12 +228,14 @@
         :dir="language === 'ar' ? 'rtl' : 'ltr'"
       >
         <h2 class="font-extrabold text-[#C5943B] dark:text-white sm:text-4xl">
-          <span class="block text-6xl text-center whitespace-nowrap sm:text-4xl">               {{ Tank_protection_coatings }}
- </span>
+          <span
+            class="block text-6xl text-center whitespace-nowrap sm:text-4xl"
+          >
+            {{ Tank_protection_coatings }}
+          </span>
         </h2>
         <p class="text-2xl mt-4 text-gray-600 text-center">
           {{ Tank_protection_coatings_description }}
-
         </p>
         <div class="lg:mt-0 lg:flex-shrink-0"></div>
       </div>

@@ -26,7 +26,7 @@ export default {
     },
   },
   watch: {
-    language: function(newLanguage, oldLanguage) {
+    language: function (newLanguage, oldLanguage) {
       this.fetchContent();
     },
   },
@@ -46,11 +46,20 @@ export default {
       >
         <path d="M50 0H100L50 100H0L50 0Z "></path>
       </svg>
-      <img
+      <!-- <img
         class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
         src="../assets/backgroundMain.avif"
         alt=""
-      />
+      /> -->
+      <picture>
+        <source type="image/avif" srcset="../assets/backgroundMain.avif" />
+        <source type="image/webp" srcset="../assets/backgroundMain.avif" />
+        <img
+          class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+          src="../assets/backgroundMain.avif"
+          alt="background image for main page"
+        />
+      </picture>
     </div>
 
     <div

@@ -11,7 +11,7 @@
         <a href="https://jazeerapaints.com/" target="_blank"
           ><img
             class="col-span-2 max-h-12 w-full object-contain lg:col-span-1 grayscale duration-300 hover:filter-none"
-            src="https://jazeerapaints.com/new-logo.svg"
+            src="../assets/logos/jazeera.svg"
             alt="Transistor"
             width="158"
             height="48"
@@ -19,7 +19,7 @@
         <a href="https://www.basf.com/sa/en.html/" target="_blank"
           ><img
             class="col-span-2 max-h-12 w-full object-contain lg:col-span-1 grayscale duration-300 hover:filter-none"
-            src="https://upload.wikimedia.org/wikipedia/commons/9/9c/BASF-Logo_bw.svg"
+            src="../assets/logos/basf.svg"
             alt="Reform"
             width="158"
             height="48"
@@ -27,7 +27,7 @@
         <a href="https://www.sika.com/" target="_blank"
           ><img
             class="col-span-2 max-h-12 w-full object-contain lg:col-span-1 grayscale duration-300 hover:filter-none"
-            src="https://sika.scene7.com/is/image/sika/glo-sika-logo-slogan-no-background?fit=crop%2C1&wid=768&hei=256&fmt=webp-alpha"
+            src="../assets/logos/sika.svg"
             alt="Tuple"
             width="158"
             height="48"
@@ -35,7 +35,7 @@
         <a href="https://fosroc.com/" target="_blank"
           ><img
             class="col-span-2 max-h-12 w-full object-contain lg:col-span-1 grayscale duration-300 hover:filter-none"
-            src="https://fosroc.com/themes/fosroc/assets/img/header-logo.svg"
+            src="../assets/logos/fosroc.svg"
             alt="Tuple"
             width="158"
             height="48"
@@ -43,19 +43,27 @@
         <a href="https://www.hempel.com/ar-me" target="_blank"
           ><img
             class="col-span-2 max-h-12 w-full object-contain lg:col-span-1 grayscale duration-300 hover:filter-none"
-            src="https://www.hempel.com/-/media/images/project/identity/hem-logo-rgb.png?h=100&w=358&hash=80EAD5AEAAE18E3157AC5C4D355A6914"
+            src="../assets/logos/hempel.svg"
             alt="Tuple"
             width="158"
             height="48"
         /></a>
-        <!-- <a href="https://sigmapaints.com/ar/" target="_blank" class="text-center"
+        <a href="https://sigmapaints.com/" target="_blank" class="text-center"
           ><img
             class="col-span-1 max-h-12 w-full object-contain lg:col-span-1 grayscale duration-300 hover:filter-none"
-            src="https://sigmapaints.com/wp-content/uploads/2019/02/Sigma-Paint_Logo-021.png"
+            src="../assets/logos/sigma.svg"
             alt="Tuple"
             width="158"
             height="48"
-        /></a> -->
+        /></a>
+        <a href="https://www.jotun.com/" target="_blank" class="text-center"
+          ><img
+            class="col-span-1 max-h-12 w-full object-contain lg:col-span-1 grayscale duration-300 hover:filter-none"
+            src="../assets/logos/jotun.svg"
+            alt="Tuple"
+            width="158"
+            height="48"
+        /></a>
 
       </div>
     </div>
