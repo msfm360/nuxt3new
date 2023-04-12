@@ -12,7 +12,7 @@ export default {
       home: "Home",
       services: "Services",
       about: "About us",
-      contact: "Contat",
+      contact: "Contact",
     };
   },
   methods: {
