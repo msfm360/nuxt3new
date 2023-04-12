@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto container px-6 xl:px-0 mt-12 shadow-2xl mb-10">
+  <div class="mx-auto container px-6 xl:px-0 mt-12 shadow-2xl mb-10 ">
     <div
       class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 justify-end items-end"
     >
@@ -69,7 +69,7 @@
           class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
         >
           <h2
-            class="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+            class="font-bold tracking-tight text-white sm:text-6xl whitespace-nowrap"
             :dir="language === 'ar' ? 'rtl' : 'ltr'"
           >
             {{ Main_activities_of_Estehdath }}
@@ -107,7 +107,7 @@
       class="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
     >
       <div class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-        <h2 class="font-extrabold text-black dark:text-white sm:text-4xl">
+        <h2 class="font-extrabold  sm:text-4xl whitespace-nowrap text-blue-500 dark:text-white">
           <span class="block text-6xl text-center">
             {{ Protective_coatings }}
           </span>
@@ -120,7 +120,7 @@
       <div class="flex items-center gap-8 p-8 lg:p-24">
         <img
           src="../assets/Protective_coatings_image.png"
-          class="rounded-lg"
+          class="rounded-lg object-cover h-full w-[70rem] shadow-xl"
           alt="Tree"
         />
         <!-- <div>
@@ -137,46 +137,32 @@
         </div> -->
       </div>
     </div>
-    <div class="bg-slate-200">
-      <div
-        class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8"
-      >
-        <!-- <div
-          class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8 shadow-lg"
-        > -->
+    <div
+      class="bg-slate-200 dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
+    >
+    <div class="flex items-center gap-8 p-8 lg:p-24 justify-center">
         <img
           src="../assets/Fire_proofing_coatings.png"
-          alt="."
-          class="rounded-lg bg-gray-100 w-[38rem] h-[26rem]"
+          class="rounded-lg object-cover h-full w-[70rem] shadow-xl "
+          alt="Tree"
         />
-        <div>
-          <div :dir="language === 'ar' ? 'rtl' : 'ltr'">
-            <h2
-              class="text-6xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center"
-            >
-              {{ Fire_proofing_coatings }}
-            </h2>
-            <p class="mt-4 text-gray-600 text-2xl">
-              {{ Fire_proofing_coatings_description }}
-            </p>
-          </div>
-          <!-- <dl
-            class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8"
-          >
-            <div
-              v-for="feature in features"
-              :key="feature.name"
-              class="border-t border-gray-200 pt-4"
-            >
-              <dt class="font-medium text-gray-900">{{ feature.name }}</dt>
-              <dd class="mt-2 text-sm text-gray-500">
-                {{ feature.description }}
-              </dd>
-            </div>
-          </dl> -->
-        </div>
+      </div>
+      <div
+        class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20"
+        :dir="language === 'ar' ? 'rtl' : 'ltr'"
+      >
+        <h2 class="font-extrabold text-[#C5943B] dark:text-white sm:text-4xl">
+          <span class="block text-6xl text-center whitespace-nowrap sm:text-4xl">               {{ Fire_proofing_coatings }}
+ </span>
+        </h2>
+        <p class="text-2xl mt-4 text-gray-600 text-center">
+          {{ Fire_proofing_coatings_description }}
+
+        </p>
+        <div class="lg:mt-0 lg:flex-shrink-0"></div>
       </div>
     </div>
+
     <div
       class="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
     >
@@ -184,7 +170,7 @@
         class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20"
         :dir="language === 'ar' ? 'rtl' : 'ltr'"
       >
-        <h2 class="font-extrabold text-black dark:text-white sm:text-4xl">
+        <h2 class="font-extrabold text-blue-500 dark:text-white sm:text-4xl">
           <span class="block text-6xl text-center"> {{ Floor_coatings }} </span>
         </h2>
         <p class="text-2xl mt-4 text-gray-600 text-center">
@@ -195,7 +181,7 @@
       <div class="flex items-center gap-8 p-8 lg:p-24">
         <img
           src="../assets/img2.jpg"
-          class="rounded-lg items-center justify-center"
+          class="rounded-lg object-cover h-full w-[70rem] shadow-xl"
           alt="Tree"
         />
         <!-- <div>
@@ -213,42 +199,29 @@
       </div>
     </div>
     <!--  -->
-    <div class="bg-slate-200">
-      <div
-        class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8"
-      >
+    <div
+      class="bg-slate-200 dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
+    >
+    <div class="flex items-center gap-8 p-8 lg:p-24">
         <img
           src="../assets/tank.jpg"
-          alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-          class="rounded-lg bg-gray-100 w-[38rem] h-[26rem]"
+          class="rounded-lg object-cover h-full w-[70rem] shadow-xl"
+          alt="Tree"
         />
+      </div>
+      <div
+        class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20"
+        :dir="language === 'ar' ? 'rtl' : 'ltr'"
+      >
+        <h2 class="font-extrabold text-[#C5943B] dark:text-white sm:text-4xl">
+          <span class="block text-6xl text-center whitespace-nowrap sm:text-4xl">               {{ Tank_protection_coatings }}
+ </span>
+        </h2>
+        <p class="text-2xl mt-4 text-gray-600 text-center">
+          {{ Tank_protection_coatings_description }}
 
-        <div>
-          <div :dir="language === 'ar' ? 'rtl' : 'ltr'">
-            <h2
-              class="text-6xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center"
-            >
-              {{ Tank_protection_coatings }}
-            </h2>
-            <p class="mt-4 text-gray-500 text-2xl">
-              {{ Tank_protection_coatings_description }}
-            </p>
-          </div>
-          <!-- <dl
-            class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8"
-          >
-            <div
-              v-for="feature in features"
-              :key="feature.name"
-              class="border-t border-gray-200 pt-4"
-            >
-              <dt class="font-medium text-gray-900">{{ feature.name }}</dt>
-              <dd class="mt-2 text-sm text-gray-500">
-                {{ feature.description }}
-              </dd>
-            </div>
-          </dl> -->
-        </div>
+        </p>
+        <div class="lg:mt-0 lg:flex-shrink-0"></div>
       </div>
     </div>
 
@@ -295,7 +268,7 @@
           <div class="lg:pr-4">
             <div class="lg:max-w-lg">
               <h1
-                class="mt-2 text-6xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+                class="font-extrabold text-blue-500 dark:text-white sm:text-4xl whitespace-nowrap"
                 :dir="language === 'ar' ? 'rtl' : 'ltr'"
               >
                 {{ Coating_for_concrete_structure }}
