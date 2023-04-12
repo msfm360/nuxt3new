@@ -47,33 +47,19 @@ export default {
       aria-label="Global"
     >
       <div class="flex lg:flex-1">
-        <a
-          href="/"
+        <router-link
+          to="/"
           aria-label="Go home"
-          title="Company"
+          title="Estehdath "
           class="inline-flex items-center"
         >
-          <svg
-            class="w-8 text-deep-purple-accent-400"
-            viewBox="0 0 24 24"
-            stroke-linejoin="round"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-miterlimit="10"
-            stroke="currentColor"
-            fill="none"
-          >
-            <rect x="3" y="1" width="7" height="12"></rect>
-            <rect x="3" y="17" width="7" height="6"></rect>
-            <rect x="14" y="1" width="7" height="6"></rect>
-            <rect x="14" y="11" width="7" height="12"></rect>
-          </svg>
-          <span
-            class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"
+        <img src="../assets/logo_without.svg" alt="" srcset="" class="w-8 h-8">
+        <span
+            class="ml-2 text-xl font-bold tracking-wide text-[#C5943B] uppercase"
           >
             {{ title }}</span
           >
-        </a>
+      </router-link>
       </div>
       <div class="flex lg:hidden ">
         <button
@@ -162,7 +148,7 @@ export default {
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">
             </span>
-            <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"> {{ title }}</span>
+            <span class="ml-2 text-xl font-bold tracking-wide text-[#C5943B] uppercase"> {{ title }}</span>
           </a>
           <button
             type="button"
