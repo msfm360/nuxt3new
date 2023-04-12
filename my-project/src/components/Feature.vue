@@ -47,7 +47,7 @@ export default {
 </script>
 
 <template>
-  <div class="bg-[#f3f4fe]" >
+  <div class="bg-gray-200" >
     <div
       class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 mt-20"
       v-motion-slide-visible-once-left
@@ -89,7 +89,7 @@ export default {
               <!-- Protect your  -->
               {{ Protect }} </span>
           </span>
-          <span class="text-blue-700" :dir="language === 'ar' ? 'rtl' : 'ltr'">{{ assets}}</span>
+          <span class="text-[#FFA602]" :dir="language === 'ar' ? 'rtl' : 'ltr'">{{ assets}}</span>
          <span :dir="language === 'ar' ? 'rtl' : 'ltr'"> {{ soloution }} </span>
          
            <!-- with our thermal and
@@ -111,46 +111,46 @@ export default {
             ></i>
 
             <i
-              class="fa-solid fa-shield text-blue-500 w-20 h-20 z-[-1] absolute"
+              class="fa-solid fa-shield text-[#FFA602] w-20 h-20 z-[-1] absolute"
             ></i>
           </div>
-          <h6 class="mb-2 font-semibold leading-5 text-blue-800">
+          <h6 class="mb-2 font-semibold leading-5 text-[#FFA602]">
             {{ Intumescent }}
           </h6>
         </div>
         <div class="text-center">
           <div
-            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-blue-500 border-solid border-2 sm:w-24 sm:h-24"
+            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#FFA602] border-solid border-2 sm:w-24 sm:h-24"
           >
             <i class="fa-solid fa-paint-roller text-white w-12 h-12"></i>
           </div>
-          <h6 class="mb-2 font-semibold leading-5 text-blue-800">
+          <h6 class="mb-2 font-semibold leading-5 text-[#FFA602]">
             {{Floor_coating}}
           </h6>
         </div>
         <div class="text-center">
           <div
-            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-blue-500 sm:w-24 sm:h-24"
+            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#FFA602] sm:w-24 sm:h-24"
           >
             <i class="fa-solid fa-temperature-half text-white w-12 h-12"></i>
           </div>
-          <h6 class="mb-2 font-semibold leading-5 text-blue-800">
+          <h6 class="mb-2 font-semibold leading-5 text-[#FFA602]">
             {{Thermal_insulation}}
           </h6>
         </div>
         <div class="text-center">
           <div
-            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-blue-500 sm:w-24 sm:h-24"
+            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#FFA602] sm:w-24 sm:h-24"
           >
             <img src="../assets/sbgEA.svg" alt="" srcset="" class="w-12 h-12">
           </div>
-          <h6 class="mb-2 font-semibold leading-5 text-blue-800">
+          <h6 class="mb-2 font-semibold leading-5 text-[#FFA602]">
             {{Thermal_Insulation_For_water}}
           </h6>
         </div>
         <div class="text-center">
           <div
-            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-blue-500 sm:w-24 sm:h-24"
+            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#FFA602] sm:w-24 sm:h-24"
           >
             <img
               src="../assets/svg-edited.svg"
@@ -160,7 +160,7 @@ export default {
               fill="white"
             />
           </div>
-          <h6 class="mb-2 font-semibold leading-5 text-blue-800">
+          <h6 class="mb-2 font-semibold leading-5 text-[#FFA602]">
             {{ Intumescent_coatings }}
           </h6>
         </div>
@@ -168,7 +168,7 @@ export default {
       <div class="text-center">
         <router-link
           to="/services"
-          class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-600 hover:bg-blue-700 focus:shadow-outline focus:outline-none"
+          class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#FFA602] hover:bg-yellow-700 focus:shadow-outline focus:outline-none"
         >
           {{ Learn_more }}
           <span class="ml-1 -mr-2">
