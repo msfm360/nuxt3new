@@ -48,7 +48,7 @@ export default {
       </svg>
       <img
         class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-        src="https://images.unsplash.com/photo-1557064262-6acc904bffbd?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb"
+        src="../assets/backgroundMain.avif"
         alt=""
       />
     </div>
