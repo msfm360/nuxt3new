@@ -4,7 +4,7 @@
       class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 justify-end items-end"
     >
       <img
-        src="https://images.unsplash.com/photo-1547895749-888a559fc2a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"
+        src="../assets/images/background.avif"
         alt=""
         class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
       />
