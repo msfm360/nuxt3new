@@ -56,7 +56,7 @@ export default {
         <source type="image/jpg" srcset="../assets/backgroundMain.jpg" /> -->
         <img
           class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-          src="../assets/backgroundMain.jpg"
+          src="../assets/backgroundMain.avif"
           alt="background image for main page"
         />
       <!-- </picture> -->
