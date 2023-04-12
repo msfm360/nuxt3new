@@ -10,7 +10,7 @@
         /> -->
 
         <img
-          src="../assets/background.avif"
+          src="../assets/background.webp"
           alt="background for services page"
           class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         />
@@ -131,18 +131,6 @@
           class="rounded-lg object-cover h-full w-[70rem] shadow-xl"
           alt="Tree"
         />
-        <!-- <div>
-          <img
-            src="https://images.unsplash.com/photo-1647426994723-ab685e4b8c77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1823&q=80"
-            class="mb-8 rounded-lg"
-            alt="Tree"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1647426994723-ab685e4b8c77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1823&q=80"
-            class="rounded-lg"
-            alt="Tree"
-          />
-        </div> -->
       </div>
     </div>
     <div
@@ -194,28 +182,15 @@
           class="rounded-lg object-cover h-full w-[70rem] shadow-xl"
           alt="Tree"
         />
-        <!-- <div>
-          <img
-            src="https://th.bing.com/th/id/OIG.vkwKMS9KYvljpSOF_zLi?pid=ImgGn"
-            class="mb-8 rounded-lg"
-            alt="Tree"
-          />
-          <img
-            src="https://th.bing.com/th/id/OIG.vkwKMS9KYvljpSOF_zLi?pid=ImgGn"
-            class="rounded-lg"
-            alt="Tree"
-          />
-        </div> -->
       </div>
     </div>
-    <!--  -->
     <div
       class="bg-slate-200 dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
     >
-      <div class="flex items-center gap-8 p-8 lg:p-24">
+      <div class="flex items-center gap-8 p-8 lg:p-24 justify-center">
         <img
-          src="../assets/tank.jpg"
-          class="rounded-lg object-cover h-full w-[70rem] shadow-xl"
+          src="../assets/Insulation.webp"
+          class="rounded-lg object-cover h-full w-[70rem] shadow-xl	"
           alt="Tree"
         />
       </div>
@@ -227,6 +202,27 @@
           <span
             class="block text-6xl text-center lg:whitespace-nowrap sm:text-4xl"
           >
+            {{ Insulation }}
+          </span>
+        </h2>
+        <p class="text-2xl mt-4 text-gray-600 text-center">
+          {{ Insulation_description }}
+        </p>
+        <div class="lg:mt-0 lg:flex-shrink-0"></div>
+      </div>
+    </div>
+
+    <div
+      class="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
+    >
+    <div
+        class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20"
+        :dir="language === 'ar' ? 'rtl' : 'ltr'"
+      >
+        <h2 class="font-extrabold text-blue-500 dark:text-white sm:text-4xl">
+          <span
+            class="block text-6xl text-center lg:whitespace-nowrap sm:text-4xl"
+          >
             {{ Tank_protection_coatings }}
           </span>
         </h2>
@@ -235,14 +231,22 @@
         </p>
         <div class="lg:mt-0 lg:flex-shrink-0"></div>
       </div>
+
+      <div class="flex items-center gap-8 p-8 lg:p-24">
+        <img
+          src="../assets/tank.jpg"
+          class="rounded-lg object-cover h-full w-[70rem] shadow-xl"
+          alt="Tree"
+        />
+      </div>
     </div>
 
     <div
-      class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+      class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 border-2 border-solid border-blue-50"
     >
       <div class="absolute inset-0 -z-10 overflow-hidden">
         <svg
-          class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+          class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-blue-300 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
           aria-hidden="true"
         >
           <defs>
@@ -257,12 +261,6 @@
               <path d="M100 200V.5M.5 .5H200" fill="none" />
             </pattern>
           </defs>
-          <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-            <path
-              d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
-              stroke-width="0"
-            />
-          </svg>
           <rect
             width="100%"
             height="100%"
@@ -271,16 +269,18 @@
           />
         </svg>
       </div>
-      <div
+      <!-- <div
         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10"
-      >
-        <div
+      > -->
+        <!-- <div
           class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
-        >
+        > -->
+        <div >
+        <div class="flex flex-col container justify-center items-center text-center">
           <div class="lg:pr-4">
             <div class="lg:max-w-lg">
               <h1
-                class="font-extrabold text-blue-500 dark:text-white sm:text-4xl lg:whitespace-nowrap"
+                class="font-extrabold text-[#C5943B] dark:text-white sm:text-4xl lg:whitespace-nowrap "
                 :dir="language === 'ar' ? 'rtl' : 'ltr'"
               >
                 {{ Coating_for_concrete_structure }}
@@ -294,7 +294,8 @@
             </div>
           </div>
         </div>
-        <div
+        
+        <!-- <div
           class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
         >
           <img
@@ -302,8 +303,9 @@
             src=""
             alt=""
           />
-        </div>
+        </div> -->
       </div>
+      
     </div>
 
     <!-- ok -->
