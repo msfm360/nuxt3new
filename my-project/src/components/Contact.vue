@@ -103,7 +103,7 @@
             <h3 class="mb-8 text-4xl font-semibold md:text-4xl">
               Send us a Message
             </h3>
-            <form name="contact" netlify>
+            <form name="contact" method="POST" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
               <div class="mb-6">
                 <label for="fullName" class="block text-xs text-dark"
