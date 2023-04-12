@@ -64,8 +64,10 @@
           "
         />
       </div>
-      <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col">
-        <div class="mx-auto max-w-2xl lg:mx-0">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+        >
           <h2
             class="text-4xl font-bold tracking-tight text-white sm:text-6xl"
             :dir="language === 'ar' ? 'rtl' : 'ltr'"
@@ -178,7 +180,10 @@
     <div
       class="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
     >
-      <div class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20" :dir="language === 'ar' ? 'rtl' : 'ltr'">
+      <div
+        class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20"
+        :dir="language === 'ar' ? 'rtl' : 'ltr'"
+      >
         <h2 class="font-extrabold text-black dark:text-white sm:text-4xl">
           <span class="block text-6xl text-center"> {{ Floor_coatings }} </span>
         </h2>
@@ -295,7 +300,10 @@
               >
                 {{ Coating_for_concrete_structure }}
               </h1>
-              <p class="mt-6 text-2xl leading-8 text-gray-700" :dir="language === 'ar' ? 'rtl' : 'ltr'">
+              <p
+                class="mt-6 text-2xl leading-8 text-gray-700"
+                :dir="language === 'ar' ? 'rtl' : 'ltr'"
+              >
                 {{ Coating_for_concrete_structure_description }}
               </p>
             </div>
@@ -314,8 +322,10 @@
     </div>
 
     <!-- ok -->
-    <div class="relative isolate overflow-hidden" :dir="language === 'ar' ? 'rtl' : 'ltr'">
-    </div>
+    <div
+      class="relative isolate overflow-hidden"
+      :dir="language === 'ar' ? 'rtl' : 'ltr'"
+    ></div>
   </div>
 </template>
 
@@ -336,8 +346,8 @@ export default {
       Protective_coatings_image: "../assets/Protective_coatings_image.png",
       Protective_coatings_description:
         "We execute projects for protective coatings against rust and corrosion on steel surfaces according to the highest international standards for implementing this type of project, based on a scientific and technical approach, and using the best materials and paints. Our projects cover petroleum and gas facilities, bridges, iron towers, steel structures, etc.",
-        Fire_proofing_coatings: "Fire-proofing coatings",
-        Fire_proofing_coatings_description:
+      Fire_proofing_coatings: "Fire-proofing coatings",
+      Fire_proofing_coatings_description:
         "Our company executes fire protection coating projects for steel structures according to the conditions of civil defense and the Saudi building code. We use the best equipment and highly skilled technicians in this field for industrial, commercial, and civil facilities such as factories, iron towers, airports, warehouses, etc.",
       Floor_coatings: "Floor coatings",
       Floor_coatings_description:
