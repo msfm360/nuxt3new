@@ -51,15 +51,15 @@ export default {
         src="../assets/backgroundMain.avif"
         alt=""
       /> -->
-      <picture>
+      <!-- <picture>
         <source type="image/avif" srcset="../assets/backgroundMain.avif" />
-        <source type="image/jpg" srcset="../assets/backgroundMain.jpg" />
+        <source type="image/jpg" srcset="../assets/backgroundMain.jpg" /> -->
         <img
           class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
           src="../assets/backgroundMain.jpg"
           alt="background image for main page"
         />
-      </picture>
+      <!-- </picture> -->
     </div>
 
     <div

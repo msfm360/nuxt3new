@@ -3,21 +3,17 @@
     <div
       class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 justify-end items-end"
     >
-    <img
+    <!-- <img
           src="../assets/background.avif"
           alt="background for services page"
           class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
-        />
+        /> -->
 
-      <picture>
-        <source type="image/avif" srcset="../assets/background.avif" />
-        <source type="image/jpg" srcset="../assets/background.jpg" />
         <img
           src="../assets/background.jpg"
           alt="background for services page"
           class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         />
-      </picture>
       <div
         class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
         aria-hidden="true"
