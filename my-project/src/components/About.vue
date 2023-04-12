@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "Hero",
+  name: "About",
   computed: {
     language() {
       return this.$store.state.Language;

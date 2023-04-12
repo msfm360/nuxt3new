@@ -1,5 +1,53 @@
+<script>
+export default {
+  name: "Logo",
+  computed: {
+    language() {
+      return this.$store.state.Language;
+    },
+  },
+  data() {
+    return {
+      Protect: "Protect your ",
+      assets: " assets",
+      soloution: " with our thermal and fire resistant solutions.",
+      Intumescent: "Intumescent Paint ",
+      Floor_coating: "Floor Coating",
+     Thermal_insulation: "Thermal Insulation",
+      Thermal_Insulation_For_water: "Thermal Insulation For water Tanks  ",
+      Intumescent_coatings: "Intumescent coatings",
+      Learn_more: "Learn more"
+
+    };
+  },
+  created() {
+    this.fetchContent();
+  },
+  methods: {
+    async fetchContent() {
+      const languageCode = this.$store.state.Language;
+      const data = await import(`../lang/Home/${languageCode}.json`);
+      this.Protect = data.Protect;
+      this.assets = data.assets;
+      this.soloution = data.soloution;
+      this.Intumescent = data.Intumescent;
+      this.Floor_coating = data.Floor_coating;
+      this.Thermal_insulation = data.Thermal_insulation;
+      this.Thermal_Insulation_For_water = data.Thermal_Insulation_For_water;
+      this.Intumescent_coatings = data.Intumescent_coatings;
+      this.Learn_more = data.Learn_more;
+    },
+  },
+  watch: {
+    language: function (newLanguage, oldLanguage) {
+      this.fetchContent();
+    },
+  },
+};
+</script>
+
 <template>
-  <div class="bg-[#f3f4fe]">
+  <div class="bg-[#f3f4fe]" >
     <div
       class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 mt-20"
       v-motion-slide-visible-once-left
@@ -10,7 +58,9 @@
         class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
       >
         <h2
+        
           class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto"
+          
         >
           <span class="relative inline-block">
             <svg
@@ -35,10 +85,15 @@
                 height="24"
               ></rect>
             </svg>
-            <span class="relative">Protect</span>
+            <span class="relative">
+              <!-- Protect your  -->
+              {{ Protect }} </span>
           </span>
-          your <span class="text-blue-700">assets</span> with our thermal and
-          fire resistant solutions.
+          <span class="text-blue-700" :dir="language === 'ar' ? 'rtl' : 'ltr'">{{ assets}}</span>
+         <span :dir="language === 'ar' ? 'rtl' : 'ltr'"> {{ soloution }} </span>
+         
+           <!-- with our thermal and
+          fire resistant solutions. -->
         </h2>
       </div>
       <!-- end text -->
@@ -60,7 +115,7 @@
             ></i>
           </div>
           <h6 class="mb-2 font-semibold leading-5 text-blue-800">
-            Intumescent Paint
+            {{ Intumescent }}
           </h6>
         </div>
         <div class="text-center">
@@ -70,7 +125,7 @@
             <i class="fa-solid fa-paint-roller text-white w-12 h-12"></i>
           </div>
           <h6 class="mb-2 font-semibold leading-5 text-blue-800">
-            Floor coating
+            {{Floor_coating}}
           </h6>
         </div>
         <div class="text-center">
@@ -80,7 +135,7 @@
             <i class="fa-solid fa-temperature-half text-white w-12 h-12"></i>
           </div>
           <h6 class="mb-2 font-semibold leading-5 text-blue-800">
-            Thermal insulation
+            {{Thermal_insulation}}
           </h6>
         </div>
         <div class="text-center">
@@ -90,7 +145,7 @@
             <img src="../assets/sbgEA.svg" alt="" srcset="" class="w-12 h-12">
           </div>
           <h6 class="mb-2 font-semibold leading-5 text-blue-800">
-            Thermal Insulation For water Tanks
+            {{Thermal_Insulation_For_water}}
           </h6>
         </div>
         <div class="text-center">
@@ -106,7 +161,7 @@
             />
           </div>
           <h6 class="mb-2 font-semibold leading-5 text-blue-800">
-            Intumescent coatings
+            {{ Intumescent_coatings }}
           </h6>
         </div>
       </div>
@@ -115,7 +170,7 @@
           to="/services"
           class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-600 hover:bg-blue-700 focus:shadow-outline focus:outline-none"
         >
-          Learn more
+          {{ Learn_more }}
           <span class="ml-1 -mr-2">
           </span>
         </router-link>
