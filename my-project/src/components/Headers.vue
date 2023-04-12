@@ -53,9 +53,9 @@ export default {
           title="Estehdath "
           class="inline-flex items-center"
         >
-        <img src="../assets/logo_without.svg" alt="" srcset="" class="w-8 h-8">
+        <img src="../assets/image.svg" alt="" srcset="" class=" w-10 h-10">
         <span
-            class="ml-2 text-xl font-bold tracking-wide text-[#C5943B] uppercase"
+            class="m-0 p-0 text-xl font-bold tracking-wide text-[#C5943B] uppercase"
           >
             {{ title }}</span
           >
