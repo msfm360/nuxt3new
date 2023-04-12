@@ -104,6 +104,7 @@
               Send us a Message
             </h3>
             <form name="contact" netlify>
+              <input type="hidden" name="form-name" value="contact" />
               <div class="mb-6">
                 <label for="fullName" class="block text-xs text-dark"
                   >Full Name*
