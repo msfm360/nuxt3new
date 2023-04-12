@@ -71,11 +71,11 @@ export default {
         >
           We cover all your
           <div class="inline-block" v-motion-roll-left :delay="500">
-            <span class="text-blue-500"> coating </span>
+            <span class="text-[#FFA602]"> coating </span>
           </div>
           and
           <div class="inline-block" v-motion-roll-left :delay="500">
-            <span class="text-blue-500"> insulation </span>
+            <span class="text-[#FFA602]"> insulation </span>
           </div>
           needs
         </h2>
@@ -85,14 +85,14 @@ export default {
         <div class="flex items-center">
           <router-link
             to="/contact"
-            class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-500 hover:bg-blue-900 focus:shadow-outline focus:outline-none"
+            class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#FFA602] hover:bg-yellow-700 focus:shadow-outline focus:outline-none"
           >
             Contact us today
           </router-link>
           <router-link
             to="/Services"
             aria-label=""
-            class="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-purple-700"
+            class="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-[#FFA602]"
             >Learn more</router-link
           >
         </div>
