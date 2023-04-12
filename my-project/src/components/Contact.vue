@@ -1,7 +1,64 @@
+<script>
+export default {
+  name: "Logo",
+  computed: {
+    language() {
+      return this.$store.state.Language;
+    },
+  },
+  data() {
+    return {
+      Contact_Us_contact: "Contact Us",
+      Let_Connect: "Let's Connect!",
+      We_just_click_away: "We're just a click away",
+      click_away: "click away",
+      Our_Location: "Our Location",
+      How_Can_We_Help: "How Can We Help?",
+      Send_us_a_Message: "Send us a Message",
+      Full_Name: "Full Name",
+      Email_Address: "Email Address",
+      Phone_Number: "Phone Number",
+      Message: "Message",
+      Send_Message: "Send Message",
+    };
+  },
+  created() {
+    this.fetchContent();
+  },
+  methods: {
+    async fetchContent() {
+      const languageCode = this.$store.state.Language;
+      const data = await import(`../lang/Home/${languageCode}.json`);
+      this.Contact_Us_contact = data.Contact_Us_contact;
+      console.log(data.Contact_Us_contact);
+      this.Let_Connect = data.Let_Connect;
+      this.We_just_click_away = data.We_just_click_away;
+      this.click_away = data.click_away;
+      this.Our_Location = data.Our_Location;
+      this.How_Can_We_Help = data.How_Can_We_Help;
+      this.Send_us_a_Message = data.Send_us_a_Message;
+      this.Full_Name = data.Full_Name;
+      this.Email_Address = data.Email_Address;
+      this.Phone_Number = data.Phone_Number;
+      this.Message = data.Message;
+      this.Send_Message = data.Send_Message;
+    },
+  },
+  watch: {
+    language: function (newLanguage, oldLanguage) {
+      this.fetchContent();
+    },
+  },
+};
+</script>
+
 <template>
-  <section class="relative py-20 md:py-[120px]">
+  <section
+    class="relative py-20 md:py-[120px]"
+    :dir="language === 'ar' ? 'rtl' : 'ltr'"
+  >
     <div
-      class="absolute top-0 left-0 z-[-1] h-1/2 w-full bg-[#f3f4fe] lg:h-[45%] xl:h-1/2"
+      class="absolute top-0 left-0 z-[-1] h-1/2 w-full bg-gray-200 lg:h-[45%] xl:h-1/2"
     ></div>
     <div class="container px-4 mx-auto">
       <div class="-mx-4 flex flex-wrap items-center">
@@ -9,13 +66,13 @@
           <div class="ud-contact-content-wrapper">
             <div class="ud-contact-title mb-12 lg:mb-[150px] bg-wh">
               <span class="mb-5 text-base font-semibold text-dark">
-                Contact Us
+                {{ Contact_Us_contact }}
               </span>
               <h2 class="text-4xl font-semibold">
-                Let's Connect!
+                {{ Let_Connect }}
                 <div class="mt-2">
-                  We're just a
-                  <span class="bg-blue-500 text-white">click away </span>
+                  {{ We_just_click_away }}
+                  <span class="bg-[#FFA602] text-white">{{ click_away }} </span>
                 </div>
               </h2>
             </div>
@@ -37,7 +94,11 @@
                   </svg>
                 </div>
                 <div>
-                  <h5 class="mb-6 text-lg font-semibold">Our Location</h5>
+                  <h5
+                    class="mb-6 text-lg font-semibold text-[#FFA602] ml-2 mr-2"
+                  >
+                    {{ Our_Location }}
+                  </h5>
                   <div class="text-base text-body-color">
                     Find Us in Dammam, Saudi Arabia
                     <div>
@@ -64,7 +125,11 @@
                   </svg>
                 </div>
                 <div class="">
-                  <h5 class="mb-6 text-lg font-semibold">How Can We Help?</h5>
+                  <h5
+                    class="mb-6 text-lg font-semibold ml-2 mr-2 text-[#FFA602]"
+                  >
+                    {{ How_Can_We_Help }}
+                  </h5>
                   <div class="">
                     <span><i class="fas fa-envelope text-4xl"></i></span
                     ><a
@@ -100,62 +165,79 @@
             data-wow-delay=".2s
               "
           >
-            <h3 class="mb-8 text-4xl font-semibold md:text-4xl">
-              Send us a Message
+            <h3 class="mb-8 text-4xl font-semibold md:text-4xl text-[#FFA602]">
+              {{ Send_us_a_Message }}
             </h3>
             <form name="contact" method="POST" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
               <div class="mb-6">
                 <label for="fullName" class="block text-xs text-dark"
-                  >Full Name*
+                  >{{ Full_Name }}*
                   <input
                     type="text"
                     name="fullName"
-                    placeholder="First and Last Name"
+                    placeholder="First and Last Name "
                     class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-gray-200 focus:outline-none"
+                    required
                   />
                 </label>
               </div>
               <div class="mb-6">
                 <label for="email" class="block text-xs text-dark"
-                  >Email*
+                  >{{ Email_Address }}*
                   <input
                     type="email"
                     name="email"
                     placeholder="example@yourmail.com"
                     class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-gray-200 focus:outline-none"
+                    required
                   />
                 </label>
               </div>
               <div class="mb-6">
                 <label for="phone" class="block text-xs text-dark"
-                  >Phone*
+                  >{{ Phone_Number }}*
                   <input
                     type="text"
                     name="phone"
                     placeholder="+966 555 555 555"
                     class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-gray-200 focus:outline-none"
+                    required
                   />
                 </label>
               </div>
               <div class="mb-6">
                 <label for="message" class="block text-xs text-dark"
-                  >Message*
+                  >{{ Message }}*
                   <textarea
                     name="message"
                     rows="3"
                     placeholder="type your message here"
                     class="w-full resize-none border-0 border-b border-[#f1f1f1] py-4 focus:border-gray-200 focus:outline-none"
+                    required
                   ></textarea>
                 </label>
               </div>
-              <div class="mb-0">
+              <div
+                class="mb-0 flex flex-col  "
+              >
                 <button
                   type="submit"
-                  class="inline-flex items-center justify-center rounded bg-blue-500 py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
+                  class="inline-flex items-center justify-center rounded bg-[#FFA602] py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
                 >
-                  Send Message
+                  {{ Send_Message }}
                 </button>
+                <div class="relative flex py-5 items-center">
+                <div class="flex-grow border-t border-gray-400"></div>
+                <span class="flex-shrink mx-4 text-gray-400">or</span>
+                <div class="flex-grow border-t border-gray-400"></div>
+              </div>
+                <a
+                  href="https://wa.me/966532688777"
+                  class="inline-flex items-center justify-center rounded bg-green-600 py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
+                >
+                  <i class="fab fa-whatsapp w-30 h-30 ml-2 mr-2"></i> Whatsapp
+                </a>
               </div>
             </form>
           </div>
@@ -163,4 +245,5 @@
       </div>
     </div>
   </section>
+  
 </template>
