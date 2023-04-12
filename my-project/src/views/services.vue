@@ -11,7 +11,7 @@
 
       <picture>
         <source type="image/avif" srcset="../assets/background.avif" />
-        <source type="image/webp" srcset="../assets/background.webp" />
+        <source type="image/jpg" srcset="../assets/background.jpg" />
         <img
           src="../assets/background.jpg"
           alt="background for services page"
