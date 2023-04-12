@@ -75,7 +75,7 @@
           class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
         >
           <h2
-            class="font-bold tracking-tight text-white sm:text-6xl whitespace-nowrap"
+            class="font-bold tracking-tight text-white sm:text-6xl lg:whitespace-nowrap"
             :dir="language === 'ar' ? 'rtl' : 'ltr'"
           >
             {{ Main_activities_of_Estehdath }}
@@ -114,7 +114,7 @@
     >
       <div class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
         <h2
-          class="font-extrabold sm:text-4xl whitespace-nowrap text-blue-500 dark:text-white"
+          class="font-extrabold sm:text-4xl lg:whitespace-nowrap text-blue-500 dark:text-white"
         >
           <span class="block text-6xl text-center">
             {{ Protective_coatings }}
@@ -161,7 +161,7 @@
       >
         <h2 class="font-extrabold text-[#C5943B] dark:text-white sm:text-4xl">
           <span
-            class="block text-6xl text-center whitespace-nowrap sm:text-4xl"
+            class="block text-6xl text-center lg:whitespace-nowrap sm:text-4xl"
           >
             {{ Fire_proofing_coatings }}
           </span>
@@ -225,7 +225,7 @@
       >
         <h2 class="font-extrabold text-[#C5943B] dark:text-white sm:text-4xl">
           <span
-            class="block text-6xl text-center whitespace-nowrap sm:text-4xl"
+            class="block text-6xl text-center lg:whitespace-nowrap sm:text-4xl"
           >
             {{ Tank_protection_coatings }}
           </span>
@@ -280,7 +280,7 @@
           <div class="lg:pr-4">
             <div class="lg:max-w-lg">
               <h1
-                class="font-extrabold text-blue-500 dark:text-white sm:text-4xl whitespace-nowrap"
+                class="font-extrabold text-blue-500 dark:text-white sm:text-4xl lg:whitespace-nowrap"
                 :dir="language === 'ar' ? 'rtl' : 'ltr'"
               >
                 {{ Coating_for_concrete_structure }}

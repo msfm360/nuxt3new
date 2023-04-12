@@ -4,6 +4,7 @@ import App from './App.vue'
 import { MotionPlugin } from '@vueuse/motion'
 import store from './store'
 import router from './router'
+import './registerServiceWorker'
 
 const app = createApp(App)
 app.use(store)
