@@ -19,7 +19,7 @@ export default {
     async changeLanguage(languageCode) {
       // set the current language to the selected language
       this.currentLanguage = languageCode;
-
+      console.log(this.$route.path);
       // update the language in Vuex
       this.$store.commit("setLanguage", languageCode);
 
@@ -41,9 +41,10 @@ export default {
 </script>
 
 <template>
-  <header class=" z-30 ">
+  <header class=" ">
     <nav
       class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 "
+      :class="{ 'fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-transparent': this.$route.path === '/About' }"
       aria-label="Global"
     >
       <div class="flex lg:flex-1">
@@ -53,39 +54,46 @@ export default {
           title="Estehdath "
           class="inline-flex items-center"
         >
-        <img src="../assets/image.svg" alt="" srcset="" class=" w-10 h-10">
-        <span
-            class="m-0 p-0 text-xl font-bold tracking-wide text-[#C5943B] "
-          >
+          <img src="../assets/image.svg" alt="" srcset="" class="w-10 h-10 " />
+          <span class="m-0 p-0 text-xl font-bold tracking-wide text-[#C5943B]" >
             {{ title }}</span
           >
-      </router-link>
+        </router-link>
       </div>
-      <div class="flex lg:hidden ">
+      <div class="flex lg:hidden m-2">
         <button
           type="button"
-          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 bg-slate-100"
+          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+          
           @click="mobileMenuOpen = true"
         >
           <span class="sr-only">Open main menu</span>
           <Bars3Icon class="h-6 w-6" aria-hidden="true" />
         </button>
       </div>
-      <PopoverGroup class="hidden lg:flex lg:gap-x-12">
-        <router-link to="/" class="text-sm font-semibold leading-6 text-gray-900"
-          >{{home}}</router-link
+      <PopoverGroup class="hidden lg:flex lg:gap-x-12 text-gray-900"            :class="{ 'ml-14 ': this.$route.path === '/About' }"
+>
+        <router-link
+          to="/"
+          class="text-sm font-semibold leading-6 "
+          >{{ home }}</router-link
         >
-        <router-link to="/Services" class="text-sm font-semibold leading-6 text-gray-900"
-          >{{services}}</router-link
+        <router-link
+          to="/Services"
+          class="text-sm font-semibold leading-6 "
+          >{{ services }}</router-link
         >
 
-        <router-link to="/About" class="text-sm font-semibold leading-6 text-gray-900"
+        <router-link
+          to="/About"
+          class="text-sm font-semibold leading-6 "
           >{{ about }}</router-link
         >
-        <router-link to="/Contact" class="text-sm font-semibold leading-6 text-gray-900"
+        <router-link
+          to="/Contact"
+          class="text-sm font-semibold leading-6 "
           >{{ contact }}</router-link
         >
-
       </PopoverGroup>
       <!-- langauge lg screen -->
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -110,7 +118,7 @@ export default {
               class="absolute left-1/2 z-10 mt-3 flex max-w-xs -translate-x-1/2"
             >
               <div
-                class="w-full flex-auto overflow-hidden rounded-lg bg-white text-xs leading-5 shadow-lg ring-1 ring-gray-900/5"
+                class="w-full flex-auto overflow-hidden rounded-lg text-xs leading-5 shadow-lg ring-1 ring-gray-900/5"
               >
                 <div class="p-2">
                   <div
@@ -146,10 +154,16 @@ export default {
       >
         <div class="flex items-center justify-between">
           <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">
-            </span>
-            <img src="../assets/image.svg" alt="" srcset="" class="w-10 h-10 inline-block">
-            <span class="text-xl font-bold tracking-wide text-[#C5943B]"> {{ title }}</span>
+            <span class="sr-only"> </span>
+            <img
+              src="../assets/image.svg"
+              alt=""
+              srcset=""
+              class="w-10 h-10 inline-block"
+            />
+            <span class="text-xl font-bold tracking-wide text-[#C5943B]">
+              {{ title }}</span
+            >
           </a>
           <button
             type="button"
@@ -163,44 +177,52 @@ export default {
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <router-link to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-              @click="mobileMenuOpen = false"
-          >{{home}}</router-link
-        >
-              <router-link to="/Services" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-              @click="mobileMenuOpen = false"
-          >{{services}}</router-link
-        >
+              <router-link
+                to="/"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                @click="mobileMenuOpen = false"
+                >{{ home }}</router-link
+              >
+              <router-link
+                to="/Services"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                @click="mobileMenuOpen = false"
+                >{{ services }}</router-link
+              >
 
-
-              <router-link 
+              <router-link
                 to="/about"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 @click="mobileMenuOpen = false"
-
-                >{{about}} </router-link
+                >{{ about }}
+              </router-link>
+              <router-link
+                to="/contact"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                @click="mobileMenuOpen = false"
+                >{{ contact }}</router-link
               >
-              <router-link to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-              @click="mobileMenuOpen = false"
-
-          >{{contact}}</router-link
-        >
             </div>
             <div class="py-6">
               <div
-                    v-for="language in languages"
-                    :key="language.code"
-                    class="group relative flex gap-x-2 rounded-lg p-2 hover:bg-gray-50 text-center"
-                  >
-
-              <button
-                @click="changeLanguage(language.code); mobileMenuOpen = false"
+                v-for="language in languages"
                 :key="language.code"
-                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                class="group relative flex gap-x-2 rounded-lg p-2 hover:bg-gray-50 text-center"
               >
-                <LanguageIcon class="h-6 w-6 inline-grid" aria-hidden="true" />
-                {{language.name}}
-              </button>
+                <button
+                  @click="
+                    changeLanguage(language.code);
+                    mobileMenuOpen = false;
+                  "
+                  :key="language.code"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  <LanguageIcon
+                    class="h-6 w-6 inline-grid"
+                    aria-hidden="true"
+                  />
+                  {{ language.name }}
+                </button>
               </div>
             </div>
           </div>
