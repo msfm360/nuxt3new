@@ -168,7 +168,12 @@ export default {
             <h3 class="mb-8 text-4xl font-semibold md:text-4xl text-[#FFA602]">
               {{ Send_us_a_Message }}
             </h3>
-            <form name="contact" method="POST" netlify>
+            <form
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
               <input type="hidden" name="form-name" value="contact" />
               <div class="mb-6">
                 <label for="fullName" class="block text-xs text-dark"
@@ -218,9 +223,7 @@ export default {
                   ></textarea>
                 </label>
               </div>
-              <div
-                class="mb-0 flex flex-col  "
-              >
+              <div class="mb-0 flex flex-col">
                 <button
                   type="submit"
                   class="inline-flex items-center justify-center rounded bg-[#FFA602] py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
@@ -228,10 +231,10 @@ export default {
                   {{ Send_Message }}
                 </button>
                 <div class="relative flex py-5 items-center">
-                <div class="flex-grow border-t border-gray-400"></div>
-                <span class="flex-shrink mx-4 text-gray-400">or</span>
-                <div class="flex-grow border-t border-gray-400"></div>
-              </div>
+                  <div class="flex-grow border-t border-gray-400"></div>
+                  <span class="flex-shrink mx-4 text-gray-400">or</span>
+                  <div class="flex-grow border-t border-gray-400"></div>
+                </div>
                 <a
                   href="https://wa.me/966532688777"
                   class="inline-flex items-center justify-center rounded bg-green-600 py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
@@ -245,5 +248,4 @@ export default {
       </div>
     </div>
   </section>
-  
 </template>
