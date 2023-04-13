@@ -283,8 +283,6 @@ const products = [
 ];
 const route = useRoute();
 
-console.log(route.path);
-console.log(this.$route.path);
 
 const callsToAction = [
   // { name: "Send email", href: "mailto:info@estehdath.com" },
