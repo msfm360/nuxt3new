@@ -234,7 +234,7 @@ export default {
                 </div>
                 <a
                   href="https://wa.me/966532688777"
-                  class="inline-flex items-center justify-center rounded bg-green-600 py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
+                  class="inline-flex items-center justify-center rounded bg-green-600 py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"  target="_blank"
                 >
                   <i class="fab fa-whatsapp w-30 h-30 ml-2 mr-2"></i> Whatsapp
                 </a>
