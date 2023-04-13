@@ -178,7 +178,3 @@ export default {
     </div>
   </div>
 </template>
-<script setup>
-console.log(this.$route.path);
-
-</script>

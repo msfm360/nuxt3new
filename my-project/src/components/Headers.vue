@@ -44,7 +44,7 @@ export default {
   <header class=" ">
     <nav
       class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 "
-      :class="{ 'fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-transparent': this.$route.path === '/About' }"
+      :class="{ 'fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-transparent': route.path === '/About' }"
       aria-label="Global"
     >
       <div class="flex lg:flex-1">
@@ -71,7 +71,7 @@ export default {
           <Bars3Icon class="h-6 w-6" aria-hidden="true" />
         </button>
       </div>
-      <PopoverGroup class="hidden lg:flex lg:gap-x-12 text-gray-900"            :class="{ 'ml-14 ': this.$route.path === '/About' }"
+      <PopoverGroup class="hidden lg:flex lg:gap-x-12 text-gray-900"            :class="{ 'ml-14 ': route.path === '/About' }"
 >
         <router-link
           to="/"
