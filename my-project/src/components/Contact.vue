@@ -103,7 +103,7 @@ export default {
                     Find Us in Dammam, Saudi Arabia
                     <div>
                       <a
-                        href="https://goo.gl/maps/HF5g28VHJ5HnNdYF9"
+                        href="https://goo.gl/maps/gAgAfzpRoj9vqC117"
                         target="_blank"
                         >View on Google Map
                       </a>
@@ -142,10 +142,10 @@ export default {
                   <div class="mt-2">
                     <span><i class="fa fa-phone text-4xl"></i></span
                     ><a
-                      href="tel:+966532688777"
+                      href="tel:+966554924555"
                       class="text-base text-body-color"
                     >
-                      0532688777</a
+                    +966554924555</a
                     >
                   </div>
                   <p class="text-base text-body-color mt-2">
@@ -200,7 +200,7 @@ export default {
                 <label for="phone" class="block text-xs text-dark"
                   >{{ Phone_Number }}*
                   <input
-                    type="text"
+                    type="number"
                     name="phone"
                     placeholder="+966 555 555 555"
                     class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-gray-200 focus:outline-none"

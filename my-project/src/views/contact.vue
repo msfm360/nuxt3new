@@ -82,7 +82,7 @@ export default {
                     "
                   class="text-blue-500"
                 >
-                  info@estehdath.com
+                  contact@estehdath.com
                 </a>
                 <div>
                   <span>{{sales}}:</span>
@@ -150,8 +150,8 @@ export default {
                 </div>
                 <div>
                   <span>{{sales}}:</span>
-                  <a href="tel:+966532688777" class="text-blue-500">
-                    +966532688777
+                  <a href="tel:+966554924555" class="text-blue-500">
+                    +966554924555
                   </a>
                 </div>
                 <div></div>

@@ -120,9 +120,9 @@ export default {
         </div>
         <div class="text-center">
           <div
-            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#FFA602] border-solid border-2 sm:w-24 sm:h-24"
+            class="flex items-center justify-center w-20 h-20 mx-auto mb-4 rounded-full bg-[#FFA602] border-solid border-2 sm:w-24 sm:h-24"
           >
-            <i class="fa-solid fa-paint-roller text-white w-12 h-12"></i>
+            <i class="fa-solid fa-paint-roller text-white w-12 h-12 "></i>
           </div>
           <h6 class="mb-2 font-semibold leading-5 text-[#FFA602]">
             {{Floor_coating}}
