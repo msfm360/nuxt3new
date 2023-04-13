@@ -118,13 +118,13 @@ export default {
               class="absolute left-1/2 z-10 mt-3 flex max-w-xs -translate-x-1/2"
             >
               <div
-                class="w-full flex-auto overflow-hidden rounded-lg text-xs leading-5 shadow-lg ring-1 ring-gray-900/5"
+                class="w-full flex-auto overflow-hidden rounded-lg text-xs leading-5 shadow-lg ring-1 ring-gray-900/5 bg-white"
               >
                 <div class="p-2">
                   <div
                     v-for="language in languages"
                     :key="language.code"
-                    class="group relative flex gap-x-2 rounded-lg p-2 hover:bg-gray-50 text-center"
+                    class="group relative flex gap-x-2 rounded-lg p-2 hover:bg-gray-50 text-center "
                   >
                     <div>
                       <button
