@@ -52,7 +52,6 @@
   </div>
   </div>
 </div>
-
   </section>
 </template>
 <script>
@@ -70,7 +69,7 @@ export default {
         'Coating for concrete structure',
       ],
       images: [
-        "/mat.svg",
+        "https://i.ibb.co/LCKkSPn/mat.webp",
         "https://i.ibb.co/PQh9cZR/Elcometer.webp",
         
       ],
