@@ -142,7 +142,7 @@
     >
       <div class="flex items-center gap-8 p-8 lg:p-24 justify-center">
         <img
-          src="../assets/Fire_proofing_coatings.png"
+          src="../assets/Fire_proofing_coatings.webp"
           class="rounded-lg object-cover h-full w-[70rem] shadow-xl"
           alt="Tree"
         />

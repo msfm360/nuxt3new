@@ -153,7 +153,7 @@ export default {
             class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#FFA602] sm:w-24 sm:h-24"
           >
             <img
-              src="../assets/svg-edited.svg"
+              src="../assets/bridge.svg"
               alt=""
               srcset=""
               class="w-12 h-12"
