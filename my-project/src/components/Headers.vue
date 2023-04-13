@@ -1,6 +1,4 @@
 <script>
- import {useRoute} from 'vue-router'
-
 export default {
   name: "Headers",
   data() {
@@ -238,7 +236,6 @@ export default {
 import { ref } from "vue";
 import {useRoute} from 'vue-router'
 
-
 import {
   Dialog,
   DialogPanel,
@@ -286,7 +283,6 @@ const products = [
 ];
 const route = useRoute();
 
-watchEffect(() => console.log(route.path));
 const callsToAction = [
   // { name: "Send email", href: "mailto:info@estehdath.com" },
   { name: "Contact sales", href: "tel:+966532688777", icon: PhoneIcon },
