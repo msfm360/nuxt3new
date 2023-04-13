@@ -71,8 +71,8 @@ export default {
         'Coating for concrete structure',
       ],
       images: [
-        "../assets/mat.svg",
-        "../assets/Elcometer.webp",
+        "../src/assets/mat.svg",
+        "../src/assets/Elcometer.webp",
         
       ],
       mission:"Our mission is to protect your assets",
