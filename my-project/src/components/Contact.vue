@@ -170,10 +170,7 @@ export default {
             </h3>
             <form
               name="contact"
-              method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-            >
+              method="POST" netlify          >
               <input type="hidden" name="form-name" value="contact" />
               <div class="mb-6">
                 <label for="fullName" class="block text-xs text-dark"
