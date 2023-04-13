@@ -1,6 +1,6 @@
 <template>
-  <hr class="shadow-lg" />
-  <div class="">
+  <hr class="shadow-lg"  />
+  <div class="" :dir="language === 'ar' ? 'rtl' : 'ltr'">
     <div
       class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
     >
@@ -14,24 +14,23 @@
           >
             <img src="../assets/image.svg" alt="" srcset="" class="w-10 h-10" />
 
-            <span class="ml-2 text-xl font-bold tracking-wide text-[#C5943B]"
-              >Estehdath</span
+            <span class="ml-2 text-xl font-bold tracking-wide text-[#C5943B] mr-2"
+              >{{ title }}</span
             >
           </router-link>
           <div class="mt-6 lg:max-w-sm">
-            <p class="text-sm text-gray-800">Do you need help?</p>
+            <p class="text-sm text-gray-800">{{ question }}</p>
             <p class="mt-4 text-sm text-gray-800">
-              Our technical support team is ready to assist you with any
-              inquiries you may have.
+              {{ technical }}
             </p>
           </div>
         </div>
         <div class="space-y-2 text-sm">
           <p class="text-base font-bold tracking-wide text-[#C5943B]">
-            Contacts
+            {{ contact }}
           </p>
           <div class="flex">
-            <p class="mr-1 text-gray-800">Phone:</p>
+            <p class="mr-1 text-gray-800">{{ Phone_Number }}:</p>
             <a
               href="tel:+966532688777"
               aria-label="Our phone"
@@ -41,7 +40,7 @@
             >
           </div>
           <div class="flex">
-            <p class="mr-1 text-gray-800">Email:</p>
+            <p class="mr-1 text-gray-800">{{ Email_Address }}:</p>
             <a
               href="mailto:info@estehdath.com"
               aria-label="Our email"
@@ -51,7 +50,7 @@
             </a>
           </div>
           <div class="flex">
-            <p class="mr-1 text-gray-800">Address:</p>
+            <p class="mr-1 text-gray-800">{{ Address }}:</p>
             <a
               href="https://www.google.com/maps"
               target="_blank"
@@ -66,7 +65,7 @@
         </div>
         <div>
           <span class="text-base font-bold tracking-wide text-[#C5943B]"
-            >Social</span
+            >{{Social}}</span
           >
           <div class="flex items-center mt-1 space-x-3">
             <meta name="twitter" content="Social media account" />
@@ -95,7 +94,7 @@
       <div
         class="flex flex-col-reverse justify-center pt-5 pb-10 border-t lg:flex-row"
       >
-        <p class="text-sm text-gray-600 text-center">© All rights reserved.</p>
+        <p class="text-sm text-gray-600 text-center">© {{ rights }}.</p>
         <!-- <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <li>
             <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">F.A.Q</a>
@@ -111,3 +110,51 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "Logo",
+  computed: {
+    language() {
+      return this.$store.state.Language;
+    },
+  },
+  data() {
+    return {
+      contact: "Contact",
+      Phone_Number: "Phone Number",
+      Email_Address: "Email Address",
+      Address: "Address",
+      rights: "All rights reserved",
+      question: "Do you have a question?",
+      technical: "Our technical support team is ready to assist you with any inquiries you may have.",
+      title: "Estehdath",
+      Social: "Social Media",
+    };
+  },
+  created() {
+    this.fetchContent();
+  },
+  methods: {
+    async fetchContent() {
+      const languageCode = this.$store.state.Language;
+      const data = await import(`../lang/Home/${languageCode}.json`);
+      this.contact = data.contact;
+      this.Phone_Number = data.Phone_Number;
+      this.Email_Address = data.Email_Address;
+      this.Address = data.Address;
+      this.rights = data.rights;
+      this.question = data.question;
+      this.technical = data.technical;
+      this.title = data.title;
+      this.Social = data.Social;
+
+    },
+  },
+  watch: {
+    language: function (newLanguage, oldLanguage) {
+      this.fetchContent();
+    },
+  },
+};
+</script>

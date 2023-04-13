@@ -1,15 +1,55 @@
+<script>
+export default {
+  name: "Logo",
+  computed: {
+    language() {
+      return this.$store.state.Language;
+    },
+  },
+  data() {
+    return {
+      contact : "Contact us",
+      Email: "Email",
+      Phone: "Phone",
+      info: "Info",
+      sales: "Sales",
+    };
+  },
+  created() {
+    this.fetchContent();
+  },
+  methods: {
+    async fetchContent() {
+      const languageCode = this.$store.state.Language;
+      const data = await import(`../lang/Contact/${languageCode}.json`);
+      this.contact = data.contact;
+      this.Email = data.Email;
+      this.Phone = data.Phone;
+      this.info = data.info;
+      this.sales = data.sales;  
+    },
+  },
+  watch: {
+    language: function (newLanguage, oldLanguage) {
+      this.fetchContent();
+    },
+  },
+};
+</script>
+
+
 <template>
   <!-- ====== Contact Section Start -->
-  <div class="pb-16">
+  <div class="pb-16" :dir="language === 'ar' ? 'rtl' : 'ltr'">
     <div class="container flex justify-center mx-auto pt-16">
       <div>
-        <p class="text-gray-500 text-lg text-center font-normal pb-3">
-          Contact us
+        <p class="text-[#FFA602] text-4xl text-center font-normal pb-3">
+          {{contact}}
         </p>
         <h1
           class="xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto"
         >
-          Protect your property with our professional services
+        <!-- slogan -->
         </h1>
       </div>
     </div>
@@ -34,9 +74,9 @@
               </div>
               <div class="px-6 mt-16 text-center mb-10">
                 <div class="font-bold text-3xl text-center pb-1 text-gray-700">
-                  Email
+                  {{ Email }}
                 </div>
-                <span>info:</span>
+                <span>{{info}}:</span>
                 <a
                   href="mailto:info@estehdath.com
                     "
@@ -45,7 +85,7 @@
                   info@estehdath.com
                 </a>
                 <div>
-                  <span>sales:</span>
+                  <span>{{sales}}:</span>
                   <a
                     href="mailto:info@estehdath.com
                     "
@@ -78,7 +118,7 @@
                   Whatsapp
                 </div>
                 <!-- whatsapp -->
-                Sales :
+                {{sales}} :
                 <a
                   href="https://wa.me/966532688777"
                   class="text-blue-500"
@@ -106,10 +146,10 @@
               </div>
               <div class="px-6 mt-16 text-center mb-20">
                 <div class="font-bold text-3xl text-center pb-1 text-gray-700">
-                  Phone
+                  {{Phone}}
                 </div>
                 <div>
-                  <span>sales:</span>
+                  <span>{{sales}}:</span>
                   <a href="tel:+966532688777" class="text-blue-500">
                     +966532688777
                   </a>
@@ -127,7 +167,3 @@
   </div>
   <!-- ====== Contact Section End -->
 </template>
-<script>
-export default {};
-</script>
-<style lang=""></style>

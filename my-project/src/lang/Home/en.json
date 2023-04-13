@@ -38,5 +38,10 @@
     "Email_Address": "Email Address",
     "Phone_Number": "Phone Number",
     "Message": "Message",
-    "Send_Message": "Send Message"
+    "Send_Message": "Send Message",
+    "Address": "Address",
+    "Social": "Social",
+    "rights": "All rights reserved",
+    "question": "Do you have a question?",
+    "technical": "Our technical support team is ready to assist you with any inquiries you may have. "
   }

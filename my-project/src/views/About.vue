@@ -1,11 +1,13 @@
 <template lang="">
-  <div class="relative">
-    <img src="../assets/backgroundMain.webp" alt="" srcset="" class="h-[50rem] w-full flex flex-col object-cover  object-center">
-    <div class="absolute bottom-0 right-0 p-4">
-      <div class="text-white text-6xl max-sm:text-4xl [text-shadow:_0_0.2rem_0_rgb(0_0_0_/_40%)]		" v-motion-fade :delay="400">Specialized contracting that requires high technical knowledge and high execution skill</div>
+  <div class="relative" :dir="language === 'ar' ? 'rtl' : 'ltr'">
+    <img src="../assets/backgroundMain.webp" alt="" srcset="" class="h-[40rem] w-full flex flex-col object-cover  object-center">
+    <div class="absolute bottom-0 p-4" >
+      <div class="text-white text-6xl max-sm:text-4xl [text-shadow:_0_0.2rem_0_rgb(0_0_0_/_40%)]"> {{Main}}</div>
+      <br>
+      <!-- <div class="text-white text-2xl max-sm:text-4xl [text-shadow:_0_0.2rem_0_rgb(0_0_0_/_40%)]		" v-motion-fade :delay="400">{{slogan}}</div> -->
     </div>
   </div>
-  <section>
+  <section :dir="language === 'ar' ? 'rtl' : 'ltr'">
     <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
   <div class="absolute inset-0 -z-10 overflow-hidden">
     <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
@@ -25,8 +27,8 @@
     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
       <div class="lg:pr-4">
         <div class="lg:max-w-lg">
-          <h1 class="mt-2 text-3xl font-bold tracking-tight text-[#C5943B] sm:text-4xl">Our mission is to protect your assets</h1>
-          <p class="mt-6 text-xl leading-8 text-gray-700">Our products and services include intumescent paint, floor coating, water and thermal insulation, coating for concrete structures, and more. We use only the best materials and equipment to ensure quality and durability of our work. We also provide free consultation and quotation for every project..</p>
+          <h1 class="mt-2 text-3xl font-bold tracking-tight text-[#C5943B] sm:text-4xl">{{mission}}</h1>
+          <p class="mt-6 text-xl leading-8 text-gray-700">{{mission_content}}</p>
         </div>
       </div>
     </div>
@@ -36,7 +38,7 @@
     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
     <div class="lg:pr-4">
       <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-        <div class="text-[#C5943B] text-2xl">Our Services :</div>
+        <div class="text-[#C5943B] text-2xl">{{services}} :</div>
         <ul role="list" class="mt-8 space-y-8 text-gray-600">
           <li v-for="(item, index) in items" :key="index" class="flex gap-x-3">
             <!-- <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -58,6 +60,8 @@
 export default {
   data() {
     return {
+      Main:"Main activities of Estehdath",
+      slogan: "Specialized contracting that requires high technical knowledge and high execution skill",
       items: [
         'Protective coatings',
         'Fire-proofing coatings',
@@ -71,13 +75,42 @@ export default {
         "src/assets/Elcometer.webp",
         
       ],
+      mission:"Our mission is to protect your assets",
+      mission_content:"Our services include intumescent paint, floor coating, water and thermal insulation, coating for concrete structures, and more. We use only the best materials and equipment to ensure quality and durability of our work. We also provide free consultation and quotation for every project.",
+      services:"Our services",
+      
       currentIndex: 0
     };
   },
   computed: {
+    language() {
+      return this.$store.state.Language;
+    },
     currentImage() {
       return this.images[this.currentIndex];
     }
+  },
+  created() {
+    this.fetchContent();
+  },
+  methods: {
+    async fetchContent() {
+      const languageCode = this.$store.state.Language;
+      const data = await import(`../lang/About/${languageCode}.json`);
+      this.Main = data.Main;
+      this.slogan = data.slogan;
+      this.items = data.items;
+      this.mission = data.mission;
+      this.mission_content = data.mission_content;
+      this.services = data.services;
+      
+
+    },
+  },
+  watch: {
+    language: function (newLanguage, oldLanguage) {
+      this.fetchContent();
+    },
   },
   mounted() {
     setInterval(() => {
