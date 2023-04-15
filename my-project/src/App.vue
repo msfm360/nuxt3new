@@ -45,15 +45,13 @@ html.dark {
 }
 </style> -->
 
-<template lang="" >
-  <div >
+<template lang="">
+  <div>
     <Headers />
     <router-view></router-view>
     <Footer />
   </div>
   <!-- router link to home -->
-  
- 
 </template>
 <script>
 import Headers from "./components/Headers.vue";
@@ -63,7 +61,21 @@ export default {
   name: "App",
   components: {
     Headers,
-    Footer
+    Footer,
   },
-}
+  created() {
+    if (this.$workbox) {
+      this.$workbox.addEventListener("waiting", () => {
+        this.showUpgradeUI = true;
+      });
+    }
+  },
+
+  methods: {
+    async accept() {
+      this.showUpgradeUI = false;
+      await this.$workbox.messageSW({ type: "SKIP_WAITING" });
+    },
+  },
+};
 </script>
