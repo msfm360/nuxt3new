@@ -3,6 +3,12 @@
     "Email" : "Email",
     "Phone" : "Phone",
     "info": "Info",
-    "sales": "Sales"
+    "sales": "Sales",
+          "sendMessage": "Send us a message",
+      "name": "Name",
+      "PhoneNumber": "Phone Number",
+      "Message": "Message",
+      "Send": "Send"
+
 
 }

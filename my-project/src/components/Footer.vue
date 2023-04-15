@@ -32,11 +32,13 @@
           <div class="flex">
             <p class="mr-1 text-gray-800">{{ Phone_Number }}:</p>
             <a
-              href="tel:+966554924555"
+              href="tel:+966532688777"
               aria-label="Our phone"
               title="Our phone"
               class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
-              >+966554924555</a
+              >+966532688777
+
+</a
             >
           </div>
           <div class="flex">

@@ -142,10 +142,10 @@ export default {
                   <div class="mt-2">
                     <span><i class="fa fa-phone text-4xl"></i></span
                     ><a
-                      href="tel:+966554924555"
+                      href="tel:+966532688777"
                       class="text-base text-body-color"
                     >
-                    +966554924555</a
+                    +966532688777</a
                     >
                   </div>
                   <p class="text-base text-body-color mt-2">
