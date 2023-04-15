@@ -9,7 +9,7 @@ export default {
   data() {
     return {
       hero_Content:
-        "We cover all your coating and insulation needs. Whether you need intumescent paint, floor coating, water and thermal insulation, we have you covered. We use the latest technology and materials to ensure quality and durability.",
+        "We cover all your coating and insulation needs. Whether you need intumescent paint, protective coating, floor coating, water and thermal insulation, we have you covered. We use the latest technology and materials to ensure quality and durability.",
       // slogan: "We cover all your coating and insulation needs",
       slogan: "We cover all your",
       word_coating: "Coating",
