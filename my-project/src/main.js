@@ -8,7 +8,6 @@ import router from './router'
 
 
 const app = createApp(App)
-// app.prototype.$workbox = wb;
 app.use(store)
 app.use(MotionPlugin)
 app.use(router)
