@@ -8,7 +8,8 @@
       "name": "Name",
       "PhoneNumber": "Phone Number",
       "Message": "Message",
-      "Send": "Send"
+      "Send": "Send",
+      "or": "or"
 
 
 }

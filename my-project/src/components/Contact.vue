@@ -20,6 +20,7 @@ export default {
       Phone_Number: "Phone Number",
       Message: "Message",
       Send_Message: "Send Message",
+      or: "or",
     };
   },
   created() {
@@ -42,6 +43,7 @@ export default {
       this.Phone_Number = data.Phone_Number;
       this.Message = data.Message;
       this.Send_Message = data.Send_Message;
+      this.or = data.or;
     },
   },
   watch: {
@@ -229,7 +231,7 @@ export default {
                 </button>
                 <div class="relative flex py-5 items-center">
                   <div class="flex-grow border-t border-gray-400"></div>
-                  <span class="flex-shrink mx-4 text-gray-400">or</span>
+                  <span class="flex-shrink mx-4 text-gray-400">{{or}}</span>
                   <div class="flex-grow border-t border-gray-400"></div>
                 </div>
                 <a

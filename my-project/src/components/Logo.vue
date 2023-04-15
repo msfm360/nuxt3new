@@ -80,7 +80,7 @@ export default {
             width="158"
             height="48"
         /></a>
-        <a href="https://sigmapaints.com/" target="_blank" class="text-center"
+          <a href="https://sigmapaints.com/" target="_blank" class="text-center"
           ><img
             class="col-span-1 max-h-12 w-full object-contain lg:col-span-1 duration-300 hover:filter-none"
             src="../assets/logos/sigma.svg"
