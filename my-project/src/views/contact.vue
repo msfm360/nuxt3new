@@ -132,9 +132,9 @@ export default {
                   ></textarea>
                 </div>
                 <div class="relative">
-                  <a
+                  <button type="submit"
                     class="w-full inline-block pt-4 pr-5 pb-4 pl-5 text-xl font-medium text-center text-white bg-blue-500 rounded-lg transition duration-200 hover:bg-indigo-600 ease"
-                    >{{ Send }}</a
+                    >{{ Send }}</button
                   >
                 </div>
               </form>
