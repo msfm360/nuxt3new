@@ -328,11 +328,11 @@ export default {
   </div>
   <!-- ====== Contact Section Start -->
   <div class="pb-16" :dir="language === 'ar' ? 'rtl' : 'ltr'">
-    <div class="container flex justify-center mx-auto pt-16">
+    <div class="container flex justify-center mx-auto pt-6">
       <div>
-        <p class="text-[#FFA602] text-4xl text-center font-normal pb-3">
+        <!-- <p class="text-[#FFA602] text-4xl text-center font-normal pb-3">
           {{ contact }}
-        </p>
+        </p> -->
         <h1
           class="xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto"
         >
