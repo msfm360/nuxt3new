@@ -136,6 +136,17 @@ export default {
                     class="w-full inline-block pt-4 pr-5 pb-4 pl-5 text-xl font-medium text-center text-white bg-blue-500 rounded-lg transition duration-200 hover:bg-indigo-600 ease"
                     >{{ Send }}</button
                   >
+                  <div class="relative flex py-5 items-center">
+                  <div class="flex-grow border-t border-gray-400"></div>
+                  <span class="flex-shrink mx-4 text-gray-400">or</span>
+                  <div class="flex-grow border-t border-gray-400"></div>
+                </div>
+                <a
+                  href="https://wa.me/966532688777"
+                  class="w-full inline-block pt-4 pr-5 pb-4 pl-5 text-xl font-medium text-center text-white bg-green-500 rounded-lg transition duration-200 hover:bg-green-600 ease"  target="_blank"
+                >
+                  <i class="fab fa-whatsapp w-30 h-30 ml-2 mr-2"></i> Whatsapp
+                </a>
                 </div>
               </form>
               </div>
