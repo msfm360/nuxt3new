@@ -86,10 +86,9 @@ export default {
                     {{ name }}
                   </p>
                   <input
-                    placeholder="Full name"
+                  type="text"
                     name="fullName"
-                    type="text"
-                    class="border placeholder-gray-400 focus:outline-none focus:border-black w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-white border-gray-300 rounded-md"
+                    placeholder="First and Last Name "                    class="border placeholder-gray-400 focus:outline-none focus:border-black w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-white border-gray-300 rounded-md"
                     required
                   />
                 </div>
@@ -100,7 +99,7 @@ export default {
                     {{ Email }}
                   </p>
                   <input
-                    type="email"
+                  type="email"
                     name="email"
                     placeholder="example@yourmail.com"
                     class="border placeholder-gray-400 focus:outline-none focus:border-black w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-white border-gray-300 rounded-md"
@@ -114,9 +113,9 @@ export default {
                     {{ PhoneNumber }}
                   </p>
                   <input
-                    placeholder="Phone Number"
-                    type="number"
+                  type="number"
                     name="phone"
+                    placeholder="+966 555 555 555"
                     class="border placeholder-gray-400 focus:outline-none focus:border-black w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-white border-gray-300 rounded-md"
                     required
                   />
@@ -160,7 +159,7 @@ export default {
           </div>
           <svg
             viewbox="0 0 91 91"
-            class="absolute top-0 left-0 z-0 w-32 h-32 -mt-12 -ml-12 text-yellow-300 fill-current"
+            class="absolute top-0 left-0 z-0 w-32 h-32 -mt-12 -ml-12 text-[#FFA602] fill-current"
           >
             <g stroke="none" strokewidth="1" fillrule="evenodd">
               <g fillrule="nonzero">
