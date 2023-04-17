@@ -79,7 +79,7 @@ export default {
             <div class="w-full mt-6 mr-0 mb-0 ml-0 relative space-y-8">
               <form name="contact" method="POST" netlify>
                 <input type="hidden" name="form-name" value="contact" />
-                <div class="relative">
+                <div class="relative mb-6">
                   <p
                     class="bg-white pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-gray-600 absolute"
                   >
@@ -92,7 +92,7 @@ export default {
                     required
                   />
                 </div>
-                <div class="relative">
+                <div class="relative mb-6">
                   <p
                     class="bg-white pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-gray-600 absolute"
                   >
@@ -106,7 +106,7 @@ export default {
                     required
                   />
                 </div>
-                <div class="relative">
+                <div class="relative mb-6">
                   <p
                     class="bg-white pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-gray-600 absolute"
                   >
@@ -120,7 +120,7 @@ export default {
                     required
                   />
                 </div>
-                <div class="relative">
+                <div class="relative mb-6">
                   <p
                     class="bg-white pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-gray-600 absolute"
                   >
