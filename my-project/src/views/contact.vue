@@ -39,7 +39,6 @@ export default {
       this.Message = data.Message;
       this.Send = data.Send;
       this.or = data.or;
-
     },
   },
   watch: {
@@ -77,9 +76,9 @@ export default {
               {{ contact }}
             </p>
 
-              <div class="w-full mt-6 mr-0 mb-0 ml-0 relative space-y-8 ">
+            <div class="w-full mt-6 mr-0 mb-0 ml-0 relative space-y-8">
               <form name="contact" method="POST" netlify>
-              <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="form-name" value="contact" />
                 <div class="relative">
                   <p
                     class="bg-white pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-gray-600 absolute"
@@ -88,6 +87,7 @@ export default {
                   </p>
                   <input
                     placeholder="Full name"
+                    name="fullName"
                     type="text"
                     class="border placeholder-gray-400 focus:outline-none focus:border-black w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-white border-gray-300 rounded-md"
                     required
@@ -100,8 +100,9 @@ export default {
                     {{ Email }}
                   </p>
                   <input
-                    placeholder="example@youremail.com"
-                    type="text"
+                    type="email"
+                    name="email"
+                    placeholder="example@yourmail.com"
                     class="border placeholder-gray-400 focus:outline-none focus:border-black w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-white border-gray-300 rounded-md"
                     required
                   />
@@ -115,6 +116,7 @@ export default {
                   <input
                     placeholder="Phone Number"
                     type="number"
+                    name="phone"
                     class="border placeholder-gray-400 focus:outline-none focus:border-black w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-white border-gray-300 rounded-md"
                     required
                   />
@@ -134,24 +136,27 @@ export default {
                   ></textarea>
                 </div>
                 <div class="relative">
-                  <button type="submit"
+                  <button
+                    type="submit"
                     class="w-full inline-block pt-4 pr-5 pb-4 pl-5 text-xl font-medium text-center text-white bg-blue-500 rounded-lg transition duration-200 hover:bg-indigo-600 ease"
-                    >{{ Send }}</button
                   >
+                    {{ Send }}
+                  </button>
                   <div class="relative flex py-5 items-center">
-                  <div class="flex-grow border-t border-gray-400"></div>
-                  <span class="flex-shrink mx-4 text-gray-400">{{or}}</span>
-                  <div class="flex-grow border-t border-gray-400"></div>
-                </div>
-                <a
-                  href="https://wa.me/966532688777"
-                  class="w-full inline-block pt-4 pr-5 pb-4 pl-5 text-xl font-medium text-center text-white bg-green-500 rounded-lg transition duration-200 hover:bg-green-600 ease"  target="_blank"
-                >
-                  <i class="fab fa-whatsapp w-30 h-30 ml-2 mr-2"></i> Whatsapp
-                </a>
+                    <div class="flex-grow border-t border-gray-400"></div>
+                    <span class="flex-shrink mx-4 text-gray-400">{{ or }}</span>
+                    <div class="flex-grow border-t border-gray-400"></div>
+                  </div>
+                  <a
+                    href="https://wa.me/966532688777"
+                    class="w-full inline-block pt-4 pr-5 pb-4 pl-5 text-xl font-medium text-center text-white bg-green-500 rounded-lg transition duration-200 hover:bg-green-600 ease"
+                    target="_blank"
+                  >
+                    <i class="fab fa-whatsapp w-30 h-30 ml-2 mr-2"></i> Whatsapp
+                  </a>
                 </div>
               </form>
-              </div>
+            </div>
           </div>
           <svg
             viewbox="0 0 91 91"
