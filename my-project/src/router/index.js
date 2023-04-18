@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import contact from '../views/contact.vue'
-import services from '../views/services.vue'
+import Home from '../pages/Home.vue'
+import About from '../pages/About.vue'
+import contact from '../pages/contact.vue'
+import services from '../pages/services.vue'
 // import sitemap from '../sitemap.xml'
 // import HomeView from "../views/HomeView.vue";
 
