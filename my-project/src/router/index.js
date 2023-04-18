@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import contact from '../views/contact.vue'
 import services from '../views/services.vue'
+// import sitemap from '../sitemap.xml'
 // import HomeView from "../views/HomeView.vue";
 
 const  routes = [
@@ -25,7 +26,13 @@ const  routes = [
           path: '/services',
           name: 'services',
           component: services
-        }
+        },
+        // {
+        //   path: '/sitemap.xml',
+        //   name: 'sitemap',
+        //   component: sitemap
+        // }
+
   
   ]
 
