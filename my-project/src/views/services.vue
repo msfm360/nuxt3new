@@ -1,19 +1,13 @@
 <template>
-  <div class="mx-auto container px-6 xl:px-0 mt-12 shadow-2xl mb-10">
+  <div class="mx-auto container xl:px-0 mt-12 shadow-2xl mb-10">
     <div
-      class="relative isolate overflow-hidden bg-gray-100 py-24 sm:py-32 justify-end items-end"
+      class="relative isolate overflow-hidden bg-gray-100 py-24 sm:py-32 justify-end items-end rounded-lg"
     >
-    <!-- <img
-          src="../assets/background.avif"
-          alt="background for services page"
-          class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
-        /> -->
-
-        <img
-          src="../assets/background.webp"
-          alt="background for services page"
-          class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center blur-sm"
-        />
+      <img
+        src="../assets/background.webp"
+        alt="background for services page"
+        class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center blur-sm"
+      />
       <div
         class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
         aria-hidden="true"
@@ -73,7 +67,6 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
         <div
           class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
-          
         >
           <h2
             class="font-bold tracking-tight text-white sm:text-6xl lg:whitespace-nowrap text-4xl"
@@ -113,13 +106,16 @@
 
     <div
       class="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
-      v-motion-slide-right :delay="200"
+      v-motion-slide-right
+      :delay="200"
     >
       <div class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
         <h2
           class="font-extrabold sm:text-4xl lg:whitespace-nowrap text-blue-500 dark:text-white"
         >
-          <span class="block text-6xl text-center lg:whitespace-nowrap sm:text-4xl">
+          <span
+            class="block text-6xl text-center lg:whitespace-nowrap sm:text-4xl"
+          >
             {{ Protective_coatings }}
           </span>
         </h2>
@@ -138,7 +134,8 @@
     </div>
     <div
       class="bg-slate-200 dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
-      v-motion-slide-visible-left :delay="200"
+      v-motion-slide-visible-left
+      :delay="200"
     >
       <div class="flex items-center gap-8 p-8 lg:p-24 justify-center">
         <img
@@ -167,14 +164,19 @@
 
     <div
       class="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
-      v-motion-slide-visible-right :delay="200"
+      v-motion-slide-visible-right
+      :delay="200"
     >
       <div
         class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20"
         :dir="language === 'ar' ? 'rtl' : 'ltr'"
       >
         <div class="font-extrabold text-blue-500 dark:text-white sm:text-4xl">
-          <span class="block text-6xl text-center lg:whitespace-nowrap sm:text-4xl"> {{ Floor_coatings }} </span>
+          <span
+            class="block text-6xl text-center lg:whitespace-nowrap sm:text-4xl"
+          >
+            {{ Floor_coatings }}
+          </span>
         </div>
         <p class="text-2xl mt-4 text-gray-600 text-center">
           {{ Floor_coatings_description }}
@@ -191,12 +193,13 @@
     </div>
     <div
       class="bg-slate-200 dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
-      v-motion-slide-visible-left :delay="200"
+      v-motion-slide-visible-left
+      :delay="200"
     >
       <div class="flex items-center gap-8 p-8 lg:p-24 justify-center">
         <img
           src="../assets/Insulation.webp"
-          class="rounded-lg object-cover h-full w-[70rem] shadow-xl	"
+          class="rounded-lg object-cover h-full w-[70rem] shadow-xl"
           alt="Tree"
         />
       </div>
@@ -220,9 +223,10 @@
 
     <div
       class="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center"
-      v-motion-slide-visible-right :delay="200"
+      v-motion-slide-visible-right
+      :delay="200"
     >
-    <div
+      <div
         class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20"
         :dir="language === 'ar' ? 'rtl' : 'ltr'"
       >
@@ -248,72 +252,23 @@
       </div>
     </div>
 
-    <div
-      class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 border-2 border-solid border-blue-50"
-      v-motion-pop-visible :delay="200"
-    >
-      <div class="absolute inset-0 -z-10 overflow-hidden">
-        <svg
-          class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-blue-300 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
-          aria-hidden="true"
-        >
-          <defs>
-            <pattern
-              id="e813992c-7d03-4cc4-a2bd-151760b470a0"
-              width="200"
-              height="200"
-              x="50%"
-              y="-1"
-              patternUnits="userSpaceOnUse"
-            >
-              <path d="M100 200V.5M.5 .5H200" fill="none" />
-            </pattern>
-          </defs>
-          <rect
-            width="100%"
-            height="100%"
-            stroke-width="0"
-            fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
-          />
-        </svg>
-      </div>
-      <!-- <div
-        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10"
-      > -->
-        <!-- <div
-          class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
-        > -->
-        <div >
-        <div class="flex flex-col container justify-center items-center text-center">
-          <div class="lg:pr-4">
-            <div class="lg:max-w-lg">
-              <div
-                class="font-extrabold text-[#C5943B] dark:text-white sm:text-4xl lg:whitespace-nowrap max-md:text-6xl"
-                :dir="language === 'ar' ? 'rtl' : 'ltr'"
-              >
-                {{ Coating_for_concrete_structure }}
-              </div>
-              <p
-                class="mt-6 text-2xl leading-8 text-gray-700"
-                :dir="language === 'ar' ? 'rtl' : 'ltr'"
-              >
-                {{ Coating_for_concrete_structure_description }}
-              </p>
-            </div>
-          </div>
+    <div class="relative bg-cover bg-left h-96 bg-slate-200 shadow-md">
+      <img
+        src="../assets/bridge-full.png"
+        alt=""
+        srcset=""
+        class="object-cover w-full h-full opacity-25 blur-sm"
+      />
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-center">
+          <h2 class="text-4xl font-extrabold text-[#C5943B] mb-4">
+            {{ Coating_for_concrete_structure }}
+          </h2>
+          <p class="text-lg text-gray-600 font-bold flex ml-6 mr-6">
+            {{ Coating_for_concrete_structure_description }}
+          </p>
         </div>
-        
-        <!-- <div
-          class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
-        >
-          <img
-            class="w-[38rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 sm:w-[57rem]"
-            src=""
-            alt=""
-          />
-        </div> -->
       </div>
-      
     </div>
 
     <!-- ok -->
@@ -326,7 +281,7 @@
 
 <script>
 export default {
-  name: "component",
+  name: "services",
   computed: {
     language() {
       return this.$store.state.Language;
@@ -391,6 +346,16 @@ export default {
     language: function (newLanguage, oldLanguage) {
       this.fetchContent();
     },
+  },
+  computed: {
+    pageTitle() {
+      // This is where you can set the title of your page dynamically
+      return 'Services';
+    },
+  },
+  mounted() {
+    // Set the page title when the component is mounted
+    document.title = this.pageTitle;
   },
 };
 </script>

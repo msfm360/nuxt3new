@@ -74,20 +74,37 @@
             <a
               href="https://twitter.com/Estehdath117"
               class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              target="_blank"
             >
               <i class="fa-brands fa-square-twitter h-8 w-8"></i>
             </a>
             <a
               href="https://instgram.com/Estehdath1"
               class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              target="_blank"
             >
               <i class="fa-brands fa-square-instagram w-8 h-8"></i>
             </a>
             <a
-              href="/"
+              href="https://www.snapchat.com/add/estehdath?share_id=YrjmztTJ9EU&locale=ar-AE"
               class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              target="_blank"
             >
               <i class="fa-brands fa-square-snapchat w-8 h-8"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100091792728388&mibextid=ZbWKwL"
+              class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              target="_blank"
+            >
+              <i class="fa-brands fa-square-facebook w-8 h-8"></i>
+            </a>
+            <a
+              href="https://wa.me/966532688777"
+              class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              target="_blank"
+            >
+              <i class="fa-brands fa-square-whatsapp w-8 h-8"></i>
             </a>
           </div>
           <p class="mt-4 text-sm text-gray-500"></p>
