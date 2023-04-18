@@ -21,6 +21,7 @@
     "aos": "^2.3.4",
     "google-spreadsheet": "^3.3.0",
     "pnpm": "^8.1.1",
+    "vite-plugin-pages": "^0.29.0",
     "vue": "^3.2.47",
     "vue-animate-onscroll": "^1.0.8",
     "vue-i18n": "^9.2.2",
