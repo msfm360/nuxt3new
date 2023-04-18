@@ -46,6 +46,17 @@ export default {
       this.fetchContent();
     },
   },
+  computed: {
+    pageTitle() {
+      // This is where you can set the title of your page dynamically
+      return 'Contact';
+    },
+  },
+  mounted() {
+    // Set the page title when the component is mounted
+    document.title = this.pageTitle;
+  },
+
 };
 </script>
 

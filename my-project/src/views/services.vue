@@ -247,15 +247,15 @@
         <img
           src="../assets/tank.jpg"
           class="rounded-lg object-cover h-full w-[70rem] shadow-xl"
-          alt="Tree"
+          alt="picture for tank protection coatings"
         />
       </div>
     </div>
 
     <div class="relative bg-cover bg-left h-96 bg-slate-200 shadow-md">
       <img
-        src="../assets/bridge-full.png"
-        alt=""
+        src="../assets/bridge-full.webp"
+        alt="picture of a bridge with a sunset in the background"
         srcset=""
         class="object-cover w-full h-full opacity-25 blur-sm"
       />

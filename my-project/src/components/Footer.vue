@@ -38,8 +38,7 @@
               class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >+966532688777
 
-</a
-            >
+</a>
           </div>
           <div class="flex">
             <p class="mr-1 text-gray-800">{{ Email_Address }}:</p>

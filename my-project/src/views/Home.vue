@@ -28,7 +28,15 @@ export default {
     Contact,
     Team,
   },
-  methods: {
+  computed: {
+    pageTitle() {
+      // This is where you can set the title of your page dynamically
+      return 'Home';
+    },
+  },
+  mounted() {
+    // Set the page title when the component is mounted
+    document.title = this.pageTitle;
   },
 };
 

@@ -86,7 +86,11 @@ export default {
     },
     currentImage() {
       return this.images[this.currentIndex];
-    }
+    },
+    pageTitle() {
+      // This is where you can set the title of your page dynamically
+      return 'About';
+    },
   },
   created() {
     this.fetchContent();
@@ -114,6 +118,8 @@ export default {
     setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.images.length;
     }, 5000);
-  }
+        // Set the page title when the component is mounted
+        document.title = this.pageTitle;
+  },
 };
 </script>
