@@ -3578,6 +3578,11 @@
   "resolved" "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
   "version" "1.0.2"
 
+"vite-plugin-pages-sitemap@^1.4.5":
+  "integrity" "sha512-AcEoJ+0D0P1CwR1LjzBznHs6yNQVP7ha7l6cl/VHrHFcQXbVyKc+QOmLi1a3eONy+aDA3K01pZVK8TzTIufq/w=="
+  "resolved" "https://registry.npmjs.org/vite-plugin-pages-sitemap/-/vite-plugin-pages-sitemap-1.4.5.tgz"
+  "version" "1.4.5"
+
 "vite-plugin-pwa@^0.14.7":
   "integrity" "sha512-dNJaf0fYOWncmjxv9HiSa2xrSjipjff7IkYE5oIUJ2x5HKu3cXgA8LRgzOwTc5MhwyFYRSU0xyN0Phbx3NsQYw=="
   "resolved" "https://registry.npmjs.org/vite-plugin-pwa/-/vite-plugin-pwa-0.14.7.tgz"
