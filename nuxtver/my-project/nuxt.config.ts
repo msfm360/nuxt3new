@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     // Recommended 
     runtimeConfig: {
       public: {
-        siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000/',
+        siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://astounding-parfait-14f2b2.netlify.app        ',
       }
     },
   
